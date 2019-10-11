@@ -1,5 +1,5 @@
-{
-  "1": {
+
+  {
     "id": 1,
     "content": "From the bottom of my heartDrive, I love you.",
     "type": "Message",
@@ -9,8 +9,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "2": {
+  }
+  {
     "id": 2,
     "content": "Violeta Parra said don't cry when the sun is gone, because the tears won't let you see the stars.",
     "type": "Message",
@@ -20,8 +20,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "3": {
+  }
+  {
     "id": 3,
     "content": "I'd rather love a million bytes and have my heartDrive broken every time, than hold a permanently empty heartDrive forever.",
     "type": "Message",
@@ -31,8 +31,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "4": {
+  }
+  {
     "id": 4,
     "content": "heartBot is a little rusty at dating, but will be your wingNut any day of the week.",
     "type": "Message",
@@ -44,8 +44,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "5": {
+  }
+  {
     "id": 5,
     "content": "They say a broken heartDrive bleeds tears, but heartBot rusts with tears, so heartBot says save your tears for someone else.",
     "type": "Message",
@@ -56,8 +56,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "6": {
+  }
+  {
     "id": 6,
     "content": "heartBots love for you is in overdrive.",
     "type": "Message",
@@ -69,8 +69,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "7": {
+  }
+  {
     "id": 7,
     "content": "heartBot recognizes you are hungry for love, heartBot has several megabytes for your heartDrive.",
     "type": "Message",
@@ -82,8 +82,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "8": {
+  }
+  {
     "id": 8,
     "content": "Mia Asher said that love is never supposed to hurt. Love is supposed to heal, to be your haven from misery, to make living worthwhile.",
     "type": "Message",
@@ -95,8 +95,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "9": {
+  }
+  {
     "id": 9,
     "content": "Your heartdrive may read error 404 not found, but heartBot has a backup heartDrive to fix you.",
     "type": "Message",
@@ -108,8 +108,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "10": {
+  }
+  {
     "id": 10,
     "content": "The Dalai Lama says remember that sometimes not getting what you want is a wonderful stroke of luck.",
     "type": "Message",
@@ -118,8 +118,8 @@
       "sad",
       "weak"
     ]
-  },
-  "11": {
+  }
+  {
     "id": 11,
     "content": "Stars cannot shine without darkness.",
     "type": "Message",
@@ -128,8 +128,8 @@
       "weak",
       "sad"
     ]
-  },
-  "12": {
+  }
+  {
     "id": 12,
     "content": "Don't stress the could haves. If it should have, it would have.",
     "type": "Message",
@@ -137,8 +137,8 @@
       "hopeful",
       "sad"
     ]
-  },
-  "13": {
+  }
+  {
     "id": 13,
     "content": "Marilyn Monroe said sometimes good things fall apart so that better things can fall together.",
     "type": "Message",
@@ -147,8 +147,8 @@
       "weak",
       "sad"
     ]
-  },
-  "14": {
+  }
+  {
     "id": 14,
     "content": "You will find that it is necessary to let things go; simply for the reason that they are heavy.",
     "type": "Message",
@@ -159,8 +159,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "15": {
+  }
+  {
     "id": 15,
     "content": "Never love anyone who treats you as if you are ordinary.",
     "type": "Message",
@@ -168,8 +168,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "16": {
+  }
+  {
     "id": 16,
     "content": "heartBot hopes your ex steps on a lego.",
     "type": "Message",
@@ -177,8 +177,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "17": {
+  }
+  {
     "id": 17,
     "content": "Your value doesn't decrease based on someone's inability to see your worth.",
     "type": "Message",
@@ -189,8 +189,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "18": {
+  }
+  {
     "id": 18,
     "content": "No relationship is a waste of time. If it didn't bring you what you want, it taught you what you don't want.",
     "type": "Message",
@@ -202,8 +202,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "19": {
+  }
+  {
     "id": 19,
     "content": "If you focus on the hurt, you will continue to suffer. If you focus on the lesson, you will continue to grow.",
     "type": "Message",
@@ -212,8 +212,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "20": {
+  }
+  {
     "id": 20,
     "content": "You will not heal by going back to what hurt you.",
     "type": "Message",
@@ -223,8 +223,8 @@
       "sad",
       "weak"
     ]
-  },
-  "21": {
+  }
+  {
     "id": 21,
     "content": "Sometimes holding on does more damage than letting go.",
     "type": "Message",
@@ -233,8 +233,8 @@
       "bitter",
       "sad"
     ]
-  },
-  "22": {
+  }
+  {
     "id": 22,
     "content": "It's hard to turn the page when you know someone won't be in the next chapter, but the story must go on.",
     "type": "Message",
@@ -243,8 +243,8 @@
       "sad",
       "lonely"
     ]
-  },
-  "23": {
+  }
+  {
     "id": 23,
     "content": "Nina Simone said you've got to learn to leave the table when love is no longer being served.",
     "type": "Message",
@@ -256,8 +256,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "24": {
+  }
+  {
     "id": 24,
     "content": "Do not beg for what does not want to stay.",
     "type": "Message",
@@ -265,8 +265,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "25": {
+  }
+  {
     "id": 25,
     "content": "Sometimes you have to forget what you feel, and remember what you deserve.",
     "type": "Message",
@@ -277,8 +277,8 @@
       "sad",
       "weak"
     ]
-  },
-  "26": {
+  }
+  {
     "id": 26,
     "content": "Frank Ocean said whatever you do, don't run back to what broke you.",
     "type": "Message",
@@ -287,8 +287,8 @@
       "weak",
       "sad"
     ]
-  },
-  "27": {
+  }
+  {
     "id": 27,
     "content": "Ijeoma Umebinyuo said you must allow the pain to visit, and you must allow it to teach you, but you must not allow it to overstay.",
     "type": "Message",
@@ -296,8 +296,8 @@
       "hopeful",
       "sad"
     ]
-  },
-  "28": {
+  }
+  {
     "id": 28,
     "content": "Ariana Grande said thank u, next.",
     "type": "Message",
@@ -309,8 +309,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "29": {
+  }
+  {
     "id": 29,
     "content": "Kelly Clarkson said since you been gone, I can breathe for the first time.",
     "type": "Message",
@@ -318,8 +318,8 @@
       "hopeful",
       "sad"
     ]
-  },
-  "30": {
+  }
+  {
     "id": 30,
     "content": "Michael Johnson said it is better to lock up your heart with a merciless padlock, than to fall in love with someone who doesn't know what they mean to you.",
     "type": "Message",
@@ -329,8 +329,8 @@
       "sad",
       "weak"
     ]
-  },
-  "31": {
+  }
+  {
     "id": 31,
     "content": "The heartDrive was made to be broken... said no robot ever. ",
     "type": "Message",
@@ -342,8 +342,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "32": {
+  }
+  {
     "id": 32,
     "content": "It's a big web of data out there, heartBot says get up and swipe your way into someone else's heartDrive",
     "type": "Message",
@@ -355,8 +355,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "33": {
+  }
+  {
     "id": 33,
     "content": "Love is like a heartDrive, when you spill water on it, shut it down and let is soak in rice before trying to start it up again. ",
     "type": "Message",
@@ -368,8 +368,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "34": {
+  }
+  {
     "id": 34,
     "content": "If you really love something set it free, if it comes back it's yours, if not it wasn't meant to be. ",
     "type": "Message",
@@ -381,8 +381,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "35": {
+  }
+  {
     "id": 35,
     "content": "Pain is inevitable, but suffering is optional.",
     "type": "Message",
@@ -391,8 +391,8 @@
       "weak",
       "lonely"
     ]
-  },
-  "36": {
+  }
+  {
     "id": 36,
     "content": "You can't start the new software in your life if you keep forgetting to update from the old one. ",
     "type": "Message",
@@ -404,8 +404,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "37": {
+  }
+  {
     "id": 37,
     "content": "Holding onto anger is like uploading malware and expecting the other persons heartDrive to fail.",
     "type": "Message",
@@ -413,8 +413,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "38": {
+  }
+  {
     "id": 38,
     "content": "If you can love the wrong peron that much, imagine how much you can love the right one.",
     "type": "Message",
@@ -426,8 +426,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "39": {
+  }
+  {
     "id": 39,
     "content": "https://open.spotify.com/track/44ADyYoY5liaRa3EOAl4uf?si=sm12QRuDQIm2Ku25LHJBIA",
     "type": "Song",
@@ -435,8 +435,8 @@
       "sad",
       "bitter"
     ]
-  },
-  "40": {
+  }
+  {
     "id": 40,
     "content": "https://open.spotify.com/track/7m8PEWF1Qjo4BmcjEYsacr?si=2IuxzCmsSfqX0WQ3S8qp0Q",
     "type": "Song",
@@ -445,8 +445,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "41": {
+  }
+  {
     "id": 41,
     "content": "https://open.spotify.com/track/4sVndKpExqG6Za4ZJf8oB3?si=qTxDBcgzSuKRozr0jAV5ag",
     "type": "Song",
@@ -455,8 +455,8 @@
       "weak",
       "lonely"
     ]
-  },
-  "42": {
+  }
+  {
     "id": 42,
     "content": "https://open.spotify.com/track/0YHUITU3w6ws1v8ehT264g?si=dP0KYCAwSSCo4IUkJcMfag",
     "type": "Song",
@@ -464,14 +464,14 @@
       "mad",
       "bitter"
     ]
-  },
-  "43": {
+  }
+  {
     "id": 43,
     "content": "https://open.spotify.com/track/79NlESqzFSW0hdBWgls4FX?si=_qL9wK7aRZCpMA8oLcp0EQ",
     "type": "Song",
     "moods": "mad, bitter, hopeful"
-  },
-  "44": {
+  }
+  {
     "id": 44,
     "content": "https://open.spotify.com/track/3e9HZxeyfWwjeyPAMmWSSQ?si=FgxHorDITl6wRHijshw_pw",
     "type": "Song",
@@ -483,8 +483,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "45": {
+  }
+  {
     "id": 45,
     "content": "https://open.spotify.com/track/78ykrsj9XNEtGmEW9QgluH?si=L6JFVvLSSZexFGxk0YVuSw",
     "type": "Song",
@@ -492,8 +492,8 @@
       "hopeful",
       ""
     ]
-  },
-  "46": {
+  }
+  {
     "id": 46,
     "content": "https://open.spotify.com/track/1i2zpmV4dQvngHZx6u7Pe6?si=KFpjZig1R4CUYxxdps2wVQ",
     "type": "Song",
@@ -502,8 +502,8 @@
       "bitter",
       "sad"
     ]
-  },
-  "47": {
+  }
+  {
     "id": 47,
     "content": "https://open.spotify.com/track/6RX5iL93VZ5fKmyvNXvF1r?si=o-MgHoBlSGq9hHxqxSutMw",
     "type": "Song",
@@ -511,8 +511,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "48": {
+  }
+  {
     "id": 48,
     "content": "https://open.spotify.com/track/3mmjD9G2HUUzDbFl3NRDLM?si=fZe72hZPTAqHMH9M5c-kXQ",
     "type": "Song",
@@ -520,8 +520,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "49": {
+  }
+  {
     "id": 49,
     "content": "https://open.spotify.com/track/3KZcrZ36LW9RnChK1iIkth?si=hwo_j8vmQK-bbqcVU1Cqpg",
     "type": "Song",
@@ -529,8 +529,8 @@
       "bitter",
       "hopeful"
     ]
-  },
-  "50": {
+  }
+  {
     "id": 50,
     "content": "https://open.spotify.com/track/7GAaTpSoTWUTbP2Yxlt4Hd?si=sA8OjmCSTCi1aahF9yBLsQ",
     "type": "Song",
@@ -539,8 +539,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "51": {
+  }
+  {
     "id": 51,
     "content": "https://open.spotify.com/track/6uAm7pG66O1XesXS9bpHSF?si=bxxk895NRnOgexe9H19Bwg",
     "type": "Song",
@@ -548,8 +548,8 @@
       "hopeful",
       "bitter"
     ]
-  },
-  "52": {
+  }
+  {
     "id": 52,
     "content": "https://open.spotify.com/track/3f3omU8n47Mqyab5nCaGyT?si=XXKIWBJ3RfmGf24peQKLQA",
     "type": "Song",
@@ -558,8 +558,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "53": {
+  }
+  {
     "id": 53,
     "content": "https://open.spotify.com/track/4sPmO7WMQUAf45kwMOtONw?si=QfPQ3PWdRomnOJ5ykOLp8w",
     "type": "Song",
@@ -567,8 +567,8 @@
       "sad",
       "hopeful"
     ]
-  },
-  "54": {
+  }
+  {
     "id": 54,
     "content": "https://open.spotify.com/track/24cKN8P2uGWypxTw5WaNlq?si=BNqpY4e2QKK4ywX4__KIaw",
     "type": "Song",
@@ -577,8 +577,8 @@
       "weak",
       "lonely"
     ]
-  },
-  "55": {
+  }
+  {
     "id": 55,
     "content": "https://open.spotify.com/track/7AEAGTc8cReDqcbPoY9gwo?si=K9RoTNRFTCuxsJmDPpcQxg",
     "type": "Song",
@@ -590,8 +590,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "56": {
+  }
+  {
     "id": 56,
     "content": "https://open.spotify.com/track/4xh7W7tlNMIczFhupCPniY?si=yi3XPbeeRdGM7alV0NUazg",
     "type": "Song",
@@ -603,8 +603,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "57": {
+  }
+  {
     "id": 57,
     "content": "https://open.spotify.com/track/3xrn9i8zhNZsTtcoWgQEAd?si=M-nmbikeQJqNRNwFRsOdEA",
     "type": "Song",
@@ -613,8 +613,8 @@
       "bitter",
       "hopeful"
     ]
-  },
-  "58": {
+  }
+  {
     "id": 58,
     "content": "https://open.spotify.com/track/7AqISujIaWcY3h5zrOqt5v?si=PF3P-WcoRteOnD5parzBBw",
     "type": "Song",
@@ -622,8 +622,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "59": {
+  }
+  {
     "id": 59,
     "content": "https://open.spotify.com/track/6urCAbunOQI4bLhmGpX7iS?si=VzgsbpJPQESBY4xE0zrAlQ",
     "type": "Song",
@@ -635,8 +635,8 @@
       "weak",
       "hopeful"
     ]
-  },
-  "60": {
+  }
+  {
     "id": 60,
     "content": "https://open.spotify.com/track/5prTs2HAw2G4idHZyeFp8o?si=0mVlbFiiROmt0f9eGxXDBQ",
     "type": "Song",
@@ -645,8 +645,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "61": {
+  }
+  {
     "id": 61,
     "content": "https://open.spotify.com/track/7g13jf3zqlP5S68Voo5v9m?si=BZOa3qNtRJ2XoqQ4ywFs6Q",
     "type": "Song",
@@ -655,8 +655,8 @@
       "lonely",
       "mad"
     ]
-  },
-  "62": {
+  }
+  {
     "id": 62,
     "content": "https://open.spotify.com/track/0Dw9z44gXhplDh5HCWZIxP?si=7he_rcIIQruV18Ry_fFtOg",
     "type": "Song",
@@ -664,8 +664,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "63": {
+  }
+  {
     "id": 63,
     "content": "https://open.spotify.com/track/2WOjLF83vqjit2Zh4B69V3?si=VjJSjS26SMiRoOytqPgIog",
     "type": "Song",
@@ -673,8 +673,8 @@
       "sad",
       "lonely"
     ]
-  },
-  "64": {
+  }
+  {
     "id": 64,
     "content": "https://open.spotify.com/track/4kflIGfjdZJW4ot2ioixTB?si=JhIzw3XeRNi3ZtVcO9xmqw",
     "type": "Song",
@@ -683,8 +683,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "65": {
+  }
+  {
     "id": 65,
     "content": "https://gph.is/1K3V8ST ",
     "type": "gif",
@@ -692,8 +692,8 @@
       "mad",
       "hopeful"
     ]
-  },
-  "66": {
+  }
+  {
     "id": 66,
     "content": "https://gph.is/g/EGy2kvJ",
     "type": "Gif",
@@ -701,8 +701,8 @@
       "hopeful",
       "bitter"
     ]
-  },
-  "67": {
+  }
+  {
     "id": 67,
     "content": "https://gph.is/2r9feGx",
     "type": "Gif",
@@ -710,8 +710,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "68": {
+  }
+  {
     "id": 68,
     "content": "https://gph.is/2KokcrP",
     "type": "Gif",
@@ -719,8 +719,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "69": {
+  }
+  {
     "id": 69,
     "content": "http://gph.is/2cUluhA",
     "type": "Gif",
@@ -728,8 +728,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "70": {
+  }
+  {
     "id": 70,
     "content": "https://gph.is/g/ZrL85XE",
     "type": "Gif",
@@ -739,8 +739,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "71": {
+  }
+  {
     "id": 71,
     "content": "http://gph.is/1Y7gFhK",
     "type": "Gif",
@@ -748,8 +748,8 @@
       "weak",
       ""
     ]
-  },
-  "72": {
+  }
+  {
     "id": 72,
     "content": "http://gph.is/XGMqm5",
     "type": "Gif",
@@ -757,8 +757,8 @@
       "sad",
       "lonely"
     ]
-  },
-  "73": {
+  }
+  {
     "id": 73,
     "content": "http://gph.is/13ZQMUv",
     "type": "Gif",
@@ -768,8 +768,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "74": {
+  }
+  {
     "id": 74,
     "content": "http://gph.is/2fzgmyp",
     "type": "Gif",
@@ -777,8 +777,8 @@
       "sad",
       ""
     ]
-  },
-  "75": {
+  }
+  {
     "id": 75,
     "content": "http://gph.is/YCdFKV",
     "type": "Gif",
@@ -786,8 +786,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "76": {
+  }
+  {
     "id": 76,
     "content": "http://gph.is/XLyOpT",
     "type": "Gif",
@@ -795,8 +795,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "77": {
+  }
+  {
     "id": 77,
     "content": "http://gph.is/2qaUboa",
     "type": "Gif",
@@ -804,8 +804,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "78": {
+  }
+  {
     "id": 78,
     "content": "https://gph.is/24XC66R",
     "type": "Gif",
@@ -815,8 +815,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "79": {
+  }
+  {
     "id": 79,
     "content": "https://gph.is/XIJhlQ ",
     "type": "Gif",
@@ -824,8 +824,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "80": {
+  }
+  {
     "id": 80,
     "content": "https://gph.is/Z1UolG ",
     "type": "Gif",
@@ -833,8 +833,8 @@
       "sad",
       "weak"
     ]
-  },
-  "81": {
+  }
+  {
     "id": 81,
     "content": "https://gph.is/2wyd7jJ",
     "type": "Gif",
@@ -844,8 +844,8 @@
       "bitter",
       "lonely"
     ]
-  },
-  "82": {
+  }
+  {
     "id": 82,
     "content": "https://gph.is/2v8HV7l ",
     "type": "Gif",
@@ -853,8 +853,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "83": {
+  }
+  {
     "id": 83,
     "content": "https://gph.is/2lkKqjI",
     "type": "Gif",
@@ -862,8 +862,8 @@
       "hopeful",
       ""
     ]
-  },
-  "84": {
+  }
+  {
     "id": 84,
     "content": "https://gph.is/1LnCqDw",
     "type": "Gif",
@@ -871,8 +871,8 @@
       "sad",
       ""
     ]
-  },
-  "85": {
+  }
+  {
     "id": 85,
     "content": "https://gph.is/1OLudxc",
     "type": "Gif",
@@ -880,8 +880,8 @@
       "sad",
       ""
     ]
-  },
-  "86": {
+  }
+  {
     "id": 86,
     "content": "https://gph.is/2ciGmhR",
     "type": "Gif",
@@ -889,8 +889,8 @@
       "sad",
       ""
     ]
-  },
-  "87": {
+  }
+  {
     "id": 87,
     "content": "https://gph.is/2eLwPB6",
     "type": "Gif",
@@ -898,8 +898,8 @@
       "sad",
       "bitter"
     ]
-  },
-  "88": {
+  }
+  {
     "id": 88,
     "content": "https://gph.is/XKMamd",
     "type": "Gif",
@@ -908,8 +908,8 @@
       "mad",
       "weak"
     ]
-  },
-  "89": {
+  }
+  {
     "id": 89,
     "content": "https://gph.is/2IZ4a6Q",
     "type": "Gif",
@@ -917,8 +917,8 @@
       "hopeful",
       ""
     ]
-  },
-  "90": {
+  }
+  {
     "id": 90,
     "content": "https://gph.is/1bZv1GA",
     "type": "Gif",
@@ -926,8 +926,8 @@
       "bitter",
       "lonely"
     ]
-  },
-  "91": {
+  }
+  {
     "id": 91,
     "content": "https://gph.is/g/aXb58p4",
     "type": "Gif",
@@ -935,8 +935,8 @@
       "hopeful",
       "lonely"
     ]
-  },
-  "92": {
+  }
+  {
     "id": 92,
     "content": "https://gph.is/2EFO6bE",
     "type": "Gif",
@@ -944,8 +944,8 @@
       "sad",
       "lonely"
     ]
-  },
-  "93": {
+  }
+  {
     "id": 93,
     "content": "https://gph.is/1f0GTkj",
     "type": "Gif",
@@ -953,8 +953,8 @@
       "hopeful",
       "sad"
     ]
-  },
-  "94": {
+  }
+  {
     "id": 94,
     "content": "https://gph.is/2jIFthp",
     "type": "Gif",
@@ -962,8 +962,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "95": {
+  }
+  {
     "id": 95,
     "content": "https://gph.is/2EFjhQw",
     "type": "Gif",
@@ -971,8 +971,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "96": {
+  }
+  {
     "id": 96,
     "content": "https://gph.is/XNeLY1",
     "type": "Gif",
@@ -980,8 +980,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "97": {
+  }
+  {
     "id": 97,
     "content": "https://gph.is/2Ls1ShD",
     "type": "Gif",
@@ -989,8 +989,8 @@
       "mad",
       "bitter"
     ]
-  },
-  "98": {
+  }
+  {
     "id": 98,
     "content": "https://gph.is/Vx1C2W",
     "type": "Gif",
@@ -999,8 +999,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "99": {
+  }
+  {
     "id": 99,
     "content": "https://gph.is/18Q0pew",
     "type": "Gif",
@@ -1009,8 +1009,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "100": {
+  }
+  {
     "id": 100,
     "content": "https://gph.is/29xDQiJ",
     "type": "Gif",
@@ -1019,8 +1019,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "101": {
+  }
+  {
     "id": 101,
     "content": "https://gph.is/g/4L3w3gZ",
     "type": "Gif",
@@ -1028,8 +1028,8 @@
       "lonely",
       "weak"
     ]
-  },
-  "102": {
+  }
+  {
     "id": 102,
     "content": "https://gph.is/XLAVdg ",
     "type": "Gif",
@@ -1039,4 +1039,3 @@
       "weak"
     ]
   }
-}
