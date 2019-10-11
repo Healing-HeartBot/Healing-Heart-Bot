@@ -41,7 +41,7 @@ describe('Response API', () => {
   const validResponse6 = {
     content: 'response6',
     type: 'song',
-    moods: ['sad', 'bitter']
+    moods: ['sad', 'weak']
   };
 
   function postResponse(response) {
@@ -123,26 +123,21 @@ describe('Response API', () => {
       postResponse(validResponse6)
     ]).then(() => {
       return request
-        .get('/api/responses/sad')
+        .get('/api/responses/drunk')
         .expect(200)
         .then(({ body }) => {
-          expect(body).toMatchInlineSnapshot(
-            {
-              _id: expect.any(String),
-              content: expect.any(String),
-              moods: expect.any(Array),
-              type: expect.any(String)
-            },
-            `
+          expect(body).toMatchInlineSnapshot(`
             Object {
               "__v": 0,
-              "_id": Any<String>,
-              "content": Any<String>,
-              "moods": Any<Array>,
-              "type": Any<String>,
+              "_id": "5da10f55ca680465d6bb8fc2",
+              "content": "response6",
+              "moods": Array [
+                "sad",
+                "weak",
+              ],
+              "type": "song",
             }
-          `
-          );
+          `);
         });
     });
   });
@@ -194,19 +189,18 @@ describe('Response API', () => {
   });
 
   it('deletes a response by id', () => {
-    return postResponse(validResponse3)
-      .then(response => {
-        return request
-          .delete(`/api/responses/${response._id}`)
-          .expect(200)
-          .then(() => {
-            return request
-              .get('/api/responses')
-              .expect(200)
-              .then(({ body }) => {
-                expect(body.length).toBe(0);
-              });
-          });
-      });
+    return postResponse(validResponse3).then(response => {
+      return request
+        .delete(`/api/responses/${response._id}`)
+        .expect(200)
+        .then(() => {
+          return request
+            .get('/api/responses')
+            .expect(200)
+            .then(({ body }) => {
+              expect(body.length).toBe(0);
+            });
+        });
+    });
   });
 });
