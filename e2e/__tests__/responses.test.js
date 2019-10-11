@@ -123,21 +123,26 @@ describe('Response API', () => {
       postResponse(validResponse6)
     ]).then(() => {
       return request
-        .get('/api/responses/drunk')
+        .get('/api/responses/random')
         .expect(200)
         .then(({ body }) => {
-          expect(body).toMatchInlineSnapshot(`
+          expect(body).toMatchInlineSnapshot(
+            {
+              _id: expect.any(String),
+              content: expect.any(String),
+              moods: expect.any(Array),
+              type: expect.any(String)
+            },
+            `
             Object {
               "__v": 0,
-              "_id": "5da10f55ca680465d6bb8fc2",
-              "content": "response6",
-              "moods": Array [
-                "sad",
-                "weak",
-              ],
-              "type": "song",
+              "_id": Any<String>,
+              "content": Any<String>,
+              "moods": Any<Array>,
+              "type": Any<String>,
             }
-          `);
+          `
+          );
         });
     });
   });
