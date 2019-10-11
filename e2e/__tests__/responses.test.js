@@ -192,4 +192,21 @@ describe('Response API', () => {
         });
     });
   });
+
+  it('deletes a response by id', () => {
+    return postResponse(validResponse3)
+      .then(response => {
+        return request
+          .delete(`/api/responses/${response._id}`)
+          .expect(200)
+          .then(() => {
+            return request
+              .get('/api/responses')
+              .expect(200)
+              .then(({ body }) => {
+                expect(body.length).toBe(0);
+              });
+          });
+      });
+  });
 });
