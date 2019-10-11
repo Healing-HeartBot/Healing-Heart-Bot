@@ -1,7 +1,7 @@
 {
-  "name": "express-reference-server",
+  "name": "healing-heart-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Twitter bot that sends you uplifting messages to help get through a breakup",
   "main": "server.js",
   "directories": {
     "lib": "lib"
@@ -15,7 +15,8 @@
     "test:watch": "npm run jest -- --watchAll",
     "test:verbose": "npm run test -- --verbose",
     "start": "node server.js",
-    "start:watch": "nodemon server.js"
+    "start:watch": "nodemon server.js",
+    "make:admin": "node lib/scripts/make-admin.js"
   },
   "keywords": [],
   "author": "",
