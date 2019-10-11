@@ -41,7 +41,7 @@ describe('Response API', () => {
   const validResponse6 = {
     content: 'response6',
     type: 'song',
-    moods: ['sad', 'bitter']
+    moods: ['sad', 'weak']
   };
 
   function postResponse(response) {
@@ -123,7 +123,7 @@ describe('Response API', () => {
       postResponse(validResponse6)
     ]).then(() => {
       return request
-        .get('/api/responses/sad')
+        .get('/api/responses/random')
         .expect(200)
         .then(({ body }) => {
           expect(body).toMatchInlineSnapshot(
@@ -194,19 +194,18 @@ describe('Response API', () => {
   });
 
   it('deletes a response by id', () => {
-    return postResponse(validResponse3)
-      .then(response => {
-        return request
-          .delete(`/api/responses/${response._id}`)
-          .expect(200)
-          .then(() => {
-            return request
-              .get('/api/responses')
-              .expect(200)
-              .then(({ body }) => {
-                expect(body.length).toBe(0);
-              });
-          });
-      });
+    return postResponse(validResponse3).then(response => {
+      return request
+        .delete(`/api/responses/${response._id}`)
+        .expect(200)
+        .then(() => {
+          return request
+            .get('/api/responses')
+            .expect(200)
+            .then(({ body }) => {
+              expect(body.length).toBe(0);
+            });
+        });
+    });
   });
 });
