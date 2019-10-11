@@ -79,6 +79,40 @@ describe('Response API', () => {
       });
   });
 
+  it('gets a random response, when no mood is provided', () => {
+    return Promise.all([
+      postResponse(validResponse),
+      postResponse(validResponse2),
+      postResponse(validResponse3),
+      postResponse(validResponse4),
+      postResponse(validResponse5),
+      postResponse(validResponse6)
+    ]).then(() => {
+      return request
+        .get('/api/responses/random')
+        .expect(200)
+        .then(({ body }) => {
+          expect(body).toMatchInlineSnapshot(
+            {
+              _id: expect.any(String),
+              content: expect.any(String),
+              moods: expect.any(Array),
+              type: expect.any(String)
+            },
+            `
+            Object {
+              "__v": 0,
+              "_id": Any<String>,
+              "content": Any<String>,
+              "moods": Any<Array>,
+              "type": Any<String>,
+            }
+          `
+          );
+        });
+    });
+  });
+
   it('is going to get a random response by mood', () => {
     return Promise.all([
       postResponse(validResponse),
@@ -143,6 +177,18 @@ describe('Response API', () => {
             }
           `
           );
+        });
+    });
+  });
+
+  it('finds a response by an id and updates', () => {
+    return postResponse(validResponse3).then(response => {
+      return request
+        .put(`/api/responses/${response._id}`)
+        .send({ content: 'this is new content' })
+        .expect(200)
+        .then(({ body }) => {
+          expect(body.content).toBe('this is new content');
         });
     });
   });
