@@ -3,6 +3,7 @@ db
 .env
 temp
 build
+.json
 
 # Created by https://www.gitignore.io/api/vim,osx,node,linux,windows
 ### Linux ###
