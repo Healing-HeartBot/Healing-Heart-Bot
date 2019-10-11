@@ -46,5 +46,4 @@ describe('Response API', () => {
           });
       });
   });
-
 });
