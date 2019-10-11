@@ -15,5 +15,5 @@ const server = createServer(app);
 // start the server by listening on a port
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log('Listen on ${PORT}');
+  console.log(`Listen on ${PORT}`);
 });

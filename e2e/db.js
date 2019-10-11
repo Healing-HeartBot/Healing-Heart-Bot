@@ -6,5 +6,8 @@ module.exports = {
       .catch(err => {
         if(err.codeName !== 'NamespaceNotFound') throw err;
       });
+  },
+  dropDatabase() {
+    return mongoose.connection.dropDatabase();
   }
 };

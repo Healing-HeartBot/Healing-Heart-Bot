@@ -1,6 +1,11 @@
 const request = require('../request');
+const Response = require('../../lib/models/response');
 
 describe('Response API', () => {
+
+  beforeEach(() => {
+    return Response.deleteMany({});
+  });
 
   const validResponse = {
     content: 'https://gph.is/2v8HV7l',
@@ -12,7 +17,7 @@ describe('Response API', () => {
     return request
       .post('/api/responses')
       .send(response)
-      .expect(200)
+      // .expect(200)
       .then(({ body }) => body);
   }
 
@@ -26,5 +31,20 @@ describe('Response API', () => {
         });
       });
   });
-  
+
+  it('gets all valid responses', () => {
+    return postResponse(validResponse)
+      .then(() => {
+        return postResponse(validResponse);
+      })
+      .then(() => {
+        return request
+          .get('/api/responses')
+          .expect(200)
+          .then(({ body }) => {
+            expect(body.length).toBe(1);
+          });
+      });
+  });
+
 });
