@@ -123,7 +123,7 @@ describe('Response API', () => {
       postResponse(validResponse6)
     ]).then(() => {
       return request
-        .get('/api/responses/random')
+        .get('/api/responses/banana?moods=sad')
         .expect(200)
         .then(({ body }) => {
           expect(body).toMatchInlineSnapshot(
@@ -209,3 +209,19 @@ describe('Response API', () => {
     });
   });
 });
+
+// {
+//   _id: expect.any(String),
+//   content: expect.any(String),
+//   moods: expect.any(Array),
+//   type: expect.any(String)
+// },
+// `
+// Object {
+//   "__v": 0,
+//   "_id": Any<String>,
+//   "content": Any<String>,
+//   "moods": Any<Array>,
+//   "type": Any<String>,
+// }
+// `
