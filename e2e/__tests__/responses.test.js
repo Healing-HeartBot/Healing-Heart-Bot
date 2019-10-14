@@ -16,7 +16,7 @@ describe('Response API', () => {
     content:
       'https://open.spotify.com/track/44ADyYoY5liaRa3EOAl4uf?si=sm12QRuDQIm2Ku25LHJBIA',
     type: 'song',
-    moods: ['sad', 'bitter']
+    moods: ['mad', 'bitter']
   };
 
   const validResponse3 = {
@@ -126,7 +126,8 @@ describe('Response API', () => {
         .get('/api/responses/banana?moods=sad')
         .expect(200)
         .then(({ body }) => {
-          expect(body).toMatchInlineSnapshot(
+          console.log(body[0]);
+          expect(body[0]).toMatchInlineSnapshot(
             {
               _id: expect.any(String),
               content: expect.any(String),
