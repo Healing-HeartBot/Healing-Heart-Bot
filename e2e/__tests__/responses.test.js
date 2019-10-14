@@ -23,13 +23,13 @@ describe('Response API', () => {
     content:
       'https://open.spotify.com/track/7m8PEWF1Qjo4BmcjEYsacr?si=2IuxzCmsSfqX0WQ3S8qp0Q',
     type: 'song',
-    moods: ['alex is lonely', 'sad']
+    moods: ['mad', 'sad']
   };
 
   const validResponse4 = {
     content: 'response4',
     type: 'song',
-    moods: ['sad', 'sad']
+    moods: ['sad', 'mad']
   };
 
   const validResponse5 = {
@@ -89,10 +89,10 @@ describe('Response API', () => {
       postResponse(validResponse6)
     ]).then(() => {
       return request
-        .get('/api/responses/random')
+        .get('/api/responses/heartbot')
         .expect(200)
         .then(({ body }) => {
-          expect(body).toMatchInlineSnapshot(
+          expect(body[0]).toMatchInlineSnapshot(
             {
               _id: expect.any(String),
               content: expect.any(String),
@@ -123,10 +123,9 @@ describe('Response API', () => {
       postResponse(validResponse6)
     ]).then(() => {
       return request
-        .get('/api/responses/banana?moods=sad')
+        .get('/api/responses/heartbot?moods=sad')
         .expect(200)
         .then(({ body }) => {
-          console.log(body[0]);
           expect(body[0]).toMatchInlineSnapshot(
             {
               _id: expect.any(String),
@@ -158,10 +157,10 @@ describe('Response API', () => {
       postResponse(validResponse6)
     ]).then(() => {
       return request
-        .get('/api/responses/sad/bitter')
+        .get('/api/responses/heartbot?moods=sad&moods=angry')
         .expect(200)
         .then(({ body }) => {
-          expect(body).toMatchInlineSnapshot(
+          expect(body[0]).toMatchInlineSnapshot(
             {
               _id: expect.any(String),
               content: expect.any(String),
@@ -210,19 +209,3 @@ describe('Response API', () => {
     });
   });
 });
-
-// {
-//   _id: expect.any(String),
-//   content: expect.any(String),
-//   moods: expect.any(Array),
-//   type: expect.any(String)
-// },
-// `
-// Object {
-//   "__v": 0,
-//   "_id": Any<String>,
-//   "content": Any<String>,
-//   "moods": Any<Array>,
-//   "type": Any<String>,
-// }
-// `
