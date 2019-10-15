@@ -35,7 +35,7 @@ stream.on('tweet', function(tweet) {
   }
 
   return request
-    .get(`http://localhost:3000/api/responses/heartbot?${tweetMood}`)
+    .get(`${process.env.BASE_URL}api/responses/heartbot?${tweetMood}`)
     .then(({ body }) => {
       const mongoReq = new TwitterReq(userData);
       const baseMoods = moodMapper(moods, tweetMood);
