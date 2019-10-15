@@ -10,7 +10,7 @@ const newTweeter = new Twit({
   consumer_secret: process.env.CONSUMER_SECRET,
   access_token: process.env.ACCESS_TOKEN,
   access_token_secret: process.env.ACCESS_TOKEN_SECRET,
-  strictSSL: true,    
+  strictSSL: true,
 });
 
 const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', language: 'en' });
@@ -27,32 +27,26 @@ stream.on('tweet', function(tweet) {
     tweet: tweet.text
   };
 
-  const tweetMood = ent.hashtags.map(mood => {
-    return mood.text;
-  }); 
+  let tweetMood = ent.hashtags.map(mood => {
+    return `moods=${mood.text}`;
+  });
+  if(tweetMood.length > 1) {
+    tweetMood = tweetMood.join('&');
+  }
 
   return request
-    .get(`http://localhost:3000/api/responses/heartbot?moods=${tweetMood[0]}`)
+    .get(`http://localhost:3000/api/responses/heartbot?${tweetMood}`)
     .then(({ body }) => {
-      console.log(body);
-      const mongoReq = new TwitterReq(userData); 
-
+      const mongoReq = new TwitterReq(userData);
       const baseMoods = moodMapper(moods, tweetMood);
-      console.log(tweetMood);
-      console.log(baseMoods);
       const base = baseMessages[baseMoods[0]];
       console.log('this should be a tweet sent by user', mongoReq);
       newTweeter.post('statuses/update', { status: `Hey @${user.screen_name}, ${base} ${body[0].content}` }, function(err, data) {
-      
         console.log('bot tweet', data);
       });
     })
     .catch(error => {
       console.log(error);
     });
-
-  
-  // const mood = ent.hashtags[1].text;
-  // const mess = baseMessages[mood];
 
 });

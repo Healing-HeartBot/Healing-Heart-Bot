@@ -49,7 +49,7 @@ describe('Response API', () => {
       request
         .post('/api/responses')
         .send(response)
-        // .expect(200)
+        .expect(200)
         .then(({ body }) => body)
     );
   }
