@@ -26,42 +26,51 @@ stream.on('tweet', function(tweet) {
     time: tweet.created_at,
     tweet: tweet.text
   };
-  console.log('hashtag', ent.hashtags);
-  console.log('tweet1', tweet.entities);
-  console.log('tweet2', tweet.text);
+
+  // console.log('hashtag', ent.hashtags);
+  // console.log('tweet1', tweet);
+  // console.log('tweet2', tweet.text);
+
+  const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
+  const tweetId = tweet.id_str;
+
+  let routeCondition = false;
 
   for(let i = 0; i < ent.hashtags.length; i++) {
-    if(ent.hashtags[i].text === 'staystrongbb') {
-      return request
-        .post('http://localhost:3000/api/responses')
-        .send({ content: userData.tweet })
-        .then(tweet => {
-          console.log(tweet);
+    if(ent.hashtags[i].text === 'staystrongbb') routeCondition = true;
+  }
+  console.log(routeCondition);
+  if(routeCondition) {
+    return request
+      .post(`${process.env.BASE_URL}api/responses`)
+      .send({ content: parseTweet })
+      .then(thing => {
+        console.log(thing);
+        newTweeter.post('favorites/create', { id: tweetId }, function(err, data) {
+          console.log('liked tweet', data);
         });
-    }
-  }
-
-
-  let tweetMood = ent.hashtags.map(mood => {
-    return `moods=${mood.text}`;
-  });
-  if(tweetMood.length > 1) {
-    tweetMood = tweetMood.join('&');
-  }
-
-  return request
-    .get(`${process.env.BASE_URL}api/responses/heartbot?${tweetMood}`)
-    .then(({ body }) => {
-      const mongoReq = new TwitterReq(userData);
-      const baseMoods = moodMapper(moods, tweetMood);
-      const base = baseMessages[baseMoods[0]];
-      console.log('this should be a tweet sent by user', mongoReq);
-      newTweeter.post('statuses/update', { status: `Hey @${user.screen_name}, ${base} ${body[0].content}` }, function(err, data) {
-        console.log('bot tweet', data);
       });
-    })
-    .catch(error => {
-      console.log(error);
+  }
+  else {
+    let tweetMood = ent.hashtags.map(mood => {
+      return `moods=${mood.text}`;
     });
-
+    if(tweetMood.length > 1) {
+      tweetMood = tweetMood.join('&');
+    }
+    return request
+      .get(`${process.env.BASE_URL}api/responses/heartbot?${tweetMood}`)
+      .then(({ body }) => {
+        const mongoReq = new TwitterReq(userData);
+        const baseMoods = moodMapper(moods, tweetMood);
+        const base = baseMessages[baseMoods[0]];
+        console.log('this should be a tweet sent by user', mongoReq);
+        newTweeter.post('statuses/update', { status: `Hey @${user.screen_name}, ${base} ${body[0].content}` }, function(err, data) {
+          console.log('bot tweet', data);
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
 });
