@@ -1,0 +1,2 @@
+server: start
+runBot: bot
