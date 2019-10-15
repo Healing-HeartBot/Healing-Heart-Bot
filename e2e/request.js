@@ -1,4 +1,4 @@
 const app = require('../lib/app');
-const request = require('supertest');
+const request = require('superagent');
 
 module.exports = request(app);
