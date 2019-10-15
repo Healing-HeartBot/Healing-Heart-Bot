@@ -4,3 +4,6 @@ vendor
 coverage
 build
 docs
+data
+response.json
+**/*.json
