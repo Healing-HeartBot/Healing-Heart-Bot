@@ -33,7 +33,7 @@ stream.on('tweet', function(tweet) {
   for(let i = 0; i < ent.hashtags.length; i++) {
     if(ent.hashtags[i].text === 'staystrongbb') {
       return request
-        .post('http://localhost:3000/api/responses')
+        .post('https://radiant-dawn-69636.herokuapp.com//api/responses')
         .send({ content: userData.tweet })
         .then(tweet => {
           console.log(tweet);
