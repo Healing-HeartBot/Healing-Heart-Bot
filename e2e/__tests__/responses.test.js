@@ -1,4 +1,4 @@
-const request = require('../request');
+const request = require('superagent');
 const Response = require('../../lib/models/response');
 
 describe('Response API', () => {
