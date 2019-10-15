@@ -1,4 +1,4 @@
-const request = require('superagent');
+const request = require('../request');
 const Response = require('../../lib/models/response');
 
 describe('Response API', () => {
@@ -49,7 +49,6 @@ describe('Response API', () => {
       request
         .post('/api/responses')
         .send(response)
-        .expect(200)
         .then(({ body }) => body)
     );
   }
