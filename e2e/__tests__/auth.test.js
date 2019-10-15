@@ -96,19 +96,20 @@ describe('Auth API', () => {
       .set('Authorization', jwt.sign({ foo: 'bar' }, 'shhhhh'))
       .expect(401);
   });
-
-
 });
 
 describe('Auth Admin Users', () => {
+  
   const adminTest = {
     email: 'alex@hellohello.com',
     password: 'abc123'
   };
+
   const louslyOlUser = {
     email: 'wassup@hellohello.com',
     password: 'abc123'
   };
+
   function signinAdminUser(admin = adminTest) {
     return request
       .post('/api/auth/signin')
@@ -116,15 +117,12 @@ describe('Auth Admin Users', () => {
       .expect(200)
       .then(({ body }) => body);
   }
+
   it('allows admin to make changes to users', () => {
     return signupUser(adminTest)
       .then(user => {
         return User.updateById(user._id,
-          {
-            $addToSet: {
-              roles: 'admin'
-            }
-          }
+          { $addToSet: { roles: 'admin' } }
         );
       })
       .then(() => {

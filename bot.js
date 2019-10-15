@@ -26,35 +26,15 @@ stream.on('tweet', function(tweet) {
     time: tweet.created_at,
     tweet: tweet.text
   };
-  // console.log('hashtag', ent.hashtags);
-  // console.log('tweet1', tweet.entities);
-  // console.log('tweet2', tweet.text);
-
-  // for(let i = 0; i < ent.hashtags.length; i++) {
-  //   if(ent.hashtags[i].text === 'staystrongbb') {
-  //     return request
-  //       .post('https://radiant-dawn-69636.herokuapp.com//api/responses')
-  //       .send({ content: userData.tweet })
-  //       .then(tweet => {
-  //         console.log(tweet);
-  //       });
-  //   }
-  // }
-
-
-  // console.log('hashtag', ent.hashtags);
-  // console.log('tweet1', tweet);
-  // console.log('tweet2', tweet.text);
 
   const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
   const tweetId = tweet.id_str;
-
   let routeCondition = false;
 
   for(let i = 0; i < ent.hashtags.length; i++) {
     if(ent.hashtags[i].text === 'staystrongbb') routeCondition = true;
   }
-  console.log(routeCondition);
+  // console.log(routeCondition);
   if(routeCondition) {
     return request
       .post(`${process.env.BASE_URL}/api/responses`)
@@ -70,6 +50,9 @@ stream.on('tweet', function(tweet) {
     let tweetMood = ent.hashtags.map(mood => {
       return `moods=${mood.text}`;
     });
+    let mappedMood = ent.hashtags.map(mood => {
+      return mood.text;
+    });
     if(tweetMood.length > 1) {
       tweetMood = tweetMood.join('&');
     }
@@ -77,7 +60,9 @@ stream.on('tweet', function(tweet) {
       .get(`${process.env.BASE_URL}/api/responses/heartbot?${tweetMood}`)
       .then(({ body }) => {
         const mongoReq = new TwitterReq(userData);
-        const baseMoods = moodMapper(moods, tweetMood);
+        const baseMoods = moodMapper(moods, mappedMood);
+        console.log(baseMoods);
+        console.log(tweetMood);
         const base = baseMessages[baseMoods[0]];
         console.log('this should be a tweet sent by user', mongoReq);
         newTweeter.post('statuses/update', { status: `Hey @${user.screen_name}, ${base} ${body[0].content}` }, function(err, data) {
