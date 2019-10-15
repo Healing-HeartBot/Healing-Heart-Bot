@@ -26,6 +26,21 @@ stream.on('tweet', function(tweet) {
     time: tweet.created_at,
     tweet: tweet.text
   };
+  console.log('hashtag', ent.hashtags);
+  console.log('tweet1', tweet.entities);
+  console.log('tweet2', tweet.text);
+
+  for(let i = 0; i < ent.hashtags.length; i++) {
+    if(ent.hashtags[i].text === 'staystrongbb') {
+      return request
+        .post('http://localhost:3000/api/responses')
+        .send({ content: userData.tweet })
+        .then(tweet => {
+          console.log(tweet);
+        });
+    }
+  }
+
 
   let tweetMood = ent.hashtags.map(mood => {
     return `moods=${mood.text}`;
