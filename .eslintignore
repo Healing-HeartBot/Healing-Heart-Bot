@@ -6,3 +6,4 @@ build
 docs
 data
 response.json
+**/*.json
