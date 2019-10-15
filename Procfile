@@ -1,2 +1,2 @@
-server: start
-runBot: bot
+server: node server.js
+runBot: node bot.js
