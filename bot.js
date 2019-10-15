@@ -26,20 +26,20 @@ stream.on('tweet', function(tweet) {
     time: tweet.created_at,
     tweet: tweet.text
   };
-  console.log('hashtag', ent.hashtags);
-  console.log('tweet1', tweet.entities);
-  console.log('tweet2', tweet.text);
+  // console.log('hashtag', ent.hashtags);
+  // console.log('tweet1', tweet.entities);
+  // console.log('tweet2', tweet.text);
 
-  for(let i = 0; i < ent.hashtags.length; i++) {
-    if(ent.hashtags[i].text === 'staystrongbb') {
-      return request
-        .post('https://radiant-dawn-69636.herokuapp.com//api/responses')
-        .send({ content: userData.tweet })
-        .then(tweet => {
-          console.log(tweet);
-        });
-    }
-  }
+  // for(let i = 0; i < ent.hashtags.length; i++) {
+  //   if(ent.hashtags[i].text === 'staystrongbb') {
+  //     return request
+  //       .post('https://radiant-dawn-69636.herokuapp.com//api/responses')
+  //       .send({ content: userData.tweet })
+  //       .then(tweet => {
+  //         console.log(tweet);
+  //       });
+  //   }
+  // }
 
 
   // console.log('hashtag', ent.hashtags);
@@ -57,7 +57,7 @@ stream.on('tweet', function(tweet) {
   console.log(routeCondition);
   if(routeCondition) {
     return request
-      .post(`${process.env.BASE_URL}api/responses`)
+      .post(`${process.env.BASE_URL}/api/responses`)
       .send({ content: parseTweet })
       .then(thing => {
         console.log(thing);
@@ -74,7 +74,7 @@ stream.on('tweet', function(tweet) {
       tweetMood = tweetMood.join('&');
     }
     return request
-      .get(`${process.env.BASE_URL}api/responses/heartbot?${tweetMood}`)
+      .get(`${process.env.BASE_URL}/api/responses/heartbot?${tweetMood}`)
       .then(({ body }) => {
         const mongoReq = new TwitterReq(userData);
         const baseMoods = moodMapper(moods, tweetMood);
