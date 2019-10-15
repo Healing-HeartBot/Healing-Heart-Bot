@@ -42,7 +42,6 @@ stream.on('tweet', function(tweet) {
       const base = baseMessages[baseMoods[0]];
       console.log('this should be a tweet sent by user', mongoReq);
       newTweeter.post('statuses/update', { status: `Hey @${user.screen_name}, ${base} ${body[0].content}` }, function(err, data) {
-
         console.log('bot tweet', data);
       });
     })
