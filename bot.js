@@ -70,8 +70,10 @@ stream.on('tweet', function(tweet) {
           return pickedMood;
         };
 
-        const index = pickMood(baseMoods.length);
         const base = baseMessages[baseMoods[0]];
+        const index = pickMood(base.length);
+        console.log('this is the index', index);
+        console.log('this is the base', base);
         console.log('this is the base[index]', base[index]);
         console.log('this should be a tweet sent by user', mongoReq);
         newTweeter.post('statuses/update', { status: `Hi @${user.screen_name}. ${base[index]} ${body[0].content}` }, function(err, data) {
