@@ -1,7 +1,11 @@
 const request = require('../request');
+const db = require('../db');
 const TwitterReq = require('../../lib/models/twitter-request');
 
 describe('Testing Twitter Request Routes', () => {
+
+  beforeEach(() => db.dropCollection('twitterreqs'));
+
   const newTwit = {
     twitId: '146fg28f',
     location: 'Portland, OR',
@@ -42,4 +46,20 @@ describe('Testing Twitter Request Routes', () => {
       );
     });
   });
+
+  it('gets all tweet info', () => {
+    return Promise.all([
+      postTwitReq(newTwit),
+      postTwitReq(newTwit)
+    ])
+      .then(() => {
+        return request
+          .get('/api/twitreq')
+          .expect(200)
+          .then(({ body }) => {
+            expect(body.length).toBe(2);
+          });
+      });
+  });
+
 });
