@@ -18,6 +18,7 @@ const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', lang
 stream.on('tweet', function(tweet) {
   const user = tweet.user;
   const ent = tweet.entities;
+
   const userData = {
     twitId: user.id,
     location: user.location,
@@ -26,6 +27,8 @@ stream.on('tweet', function(tweet) {
     time: tweet.created_at,
     tweet: tweet.text
   };
+
+  postTwitReq(userData);
 
   const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
   const tweetId = tweet.id_str;
@@ -79,3 +82,10 @@ stream.on('tweet', function(tweet) {
       });
   }
 });
+
+function postTwitReq(newTweet) {
+  return request
+    .post(`${process.env.BASE_URL}/api/twitreq`)
+    .send(newTweet)
+    .then(({ body }) => body);
+}
