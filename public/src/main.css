@@ -1,0 +1,69 @@
+body {
+  background-color: #EFD5E7;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+}
+
+#robot-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.robot-head {
+  height: 12%;
+  width: 12%;
+  display: block;
+  margin: 0 auto;
+}
+
+.robot-left-arm {
+  margin-right: -30px;
+  height: 10%;
+  width: 10%;
+  z-index: 1;
+}
+
+.robot-right-arm {
+  margin-left: -24px;
+  height: 9%;
+  width: 9%;
+}
+
+.robot-feet {
+  height: 18%;
+  width: 18%;
+  display: block;
+  margin: 0 auto;
+}
+
+.twitter-icon {
+  height: 50px;
+  width: auto;
+  padding: 10px 10px;
+}
+
+.logo {
+  height: 150px; 
+  width: auto;
+  padding: 15px 15px;
+} 
+
+#response {
+  width: 300px;
+  height: 380px;
+  background-color: #eee;
+  z-index: -1;
+  /* margin-top: 20px; */
+}
