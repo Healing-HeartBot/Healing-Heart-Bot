@@ -14,6 +14,7 @@ const newTweeter = new Twit({
 });
 
 const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', language: 'en' });
+stream.on('error', console.error);
 
 stream.on('tweet', function(tweet) {
   const user = tweet.user;
