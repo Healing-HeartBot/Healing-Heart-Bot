@@ -16,6 +16,7 @@ const newTweeter = new Twit({
 const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', language: 'en' });
 stream.on('error', console.error);
 stream.on('connected', () => console.log('we connect'));
+stream.on('disconnected', () => console.log('im disconnected'));
 
 process.on('SIGTERM', () => {
   stream.stop();
@@ -34,7 +35,7 @@ stream.on('tweet', function(tweet) {
     tweet: tweet.text
   };
 
-  // postTwitReq(userData);
+  postTwitReq(userData);
 
   const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
   const tweetId = tweet.id_str;
@@ -89,9 +90,9 @@ stream.on('tweet', function(tweet) {
   }
 });
 
-// function postTwitReq(newTweet) {
-//   return request
-//     .post(`${process.env.BASE_URL}/api/twitreq`)
-//     .send(newTweet)
-//     .then(({ body }) => body);
-// }
+function postTwitReq(newTweet) {
+  return request
+    .post(`${process.env.BASE_URL}/api/twitreq`)
+    .send(newTweet)
+    .then(({ body }) => body);
+}
