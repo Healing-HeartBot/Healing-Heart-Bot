@@ -14,10 +14,18 @@ const newTweeter = new Twit({
 });
 
 const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', language: 'en' });
+stream.on('error', console.error);
+stream.on('connected', () => console.log('we connect'));
+stream.on('disconnected', () => console.log('im disconnected'));
+
+process.on('SIGTERM', () => {
+  stream.stop();
+});
 
 stream.on('tweet', function(tweet) {
   const user = tweet.user;
   const ent = tweet.entities;
+
   const userData = {
     twitId: user.id,
     location: user.location,
@@ -27,6 +35,8 @@ stream.on('tweet', function(tweet) {
     tweet: tweet.text
   };
 
+  postTwitReq(userData);
+
   const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
   const tweetId = tweet.id_str;
   let routeCondition = false;
@@ -34,7 +44,7 @@ stream.on('tweet', function(tweet) {
   for(let i = 0; i < ent.hashtags.length; i++) {
     if(ent.hashtags[i].text === 'staystrongbb') routeCondition = true;
   }
-  // console.log(routeCondition);
+  
   if(routeCondition) {
     return request
       .post(`${process.env.BASE_URL}/api/responses`)
@@ -67,8 +77,8 @@ stream.on('tweet', function(tweet) {
           return pickedMood;
         };
 
-        const index = pickMood(baseMoods.length);
         const base = baseMessages[baseMoods[0]];
+        const index = pickMood(base.length);
         console.log('this should be a tweet sent by user', mongoReq);
         newTweeter.post('statuses/update', { status: `Hi @${user.screen_name}. ${base[index]} ${body[0].content}` }, function(err, data) {
           console.log('bot tweet', data);
@@ -79,3 +89,10 @@ stream.on('tweet', function(tweet) {
       });
   }
 });
+
+function postTwitReq(newTweet) {
+  return request
+    .post(`${process.env.BASE_URL}/api/twitreq`)
+    .send(newTweet)
+    .then(({ body }) => body);
+}
