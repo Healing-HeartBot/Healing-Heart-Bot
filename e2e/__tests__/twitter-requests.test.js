@@ -1,6 +1,5 @@
 const request = require('../request');
 const db = require('../db');
-const TwitterReq = require('../../lib/models/twitter-request');
 
 describe('Testing Twitter Request Routes', () => {
 
