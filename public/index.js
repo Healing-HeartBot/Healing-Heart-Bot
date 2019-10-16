@@ -1,18 +1,27 @@
-import { getResponse } from './util/helper-functions.js';
+import { getResponse, getGiphy } from './util/helper-functions.js';
 const form = document.getElementById('form')
 const response = document.getElementById('response');
 
 form.addEventListener('submit', event => {
   event.preventDefault();
+  while(response.hasChildNodes()) {
+    response.removeChild(response.firstChild);
+  }
   const mood = form.dropdown.value;
   getResponse(mood)
     .then(receivedResponse => {
       const botResponse = receivedResponse[0].content;
       console.log(botResponse);
-      if(botResponse.includes('gph')) {
-        const giphyImage = document.createElement('iframe');
-        giphyImage.src = botResponse;
-        response.append(giphyImage);
+      if(botResponse.includes('giphy')) {
+        const giphyId = botResponse.slice(23, botResponse.length);
+        getGiphy(giphyId)
+          .then(gifData => {
+            const giphyImage = document.createElement('iframe');
+            giphyImage.src = gifData.data.embed_url;
+            giphyImage.width = gifData.data.images.original.width;
+            giphyImage.height = gifData.data.images.original.height;
+            response.append(giphyImage);
+          })
       }
       if(botResponse.includes('spotify')){
         const spotifyPlayer = document.createElement('iframe');
@@ -25,11 +34,10 @@ form.addEventListener('submit', event => {
         console.log(spotifyPlayer);
         response.append(spotifyPlayer);
       }
+      else {
+        const p = document.createElement('p');
+        p.innerHTML = botResponse;
+        response.append(p);
+      }
     })
 })
-
-/* <iframe src="https://giphy.com/embed/nnYkNPnxysc5W" width="480" height="475" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nnYkNPnxysc5W">via GIPHY</a></p> */
-
-/* <div style="width:100%;height:0;padding-bottom:99%;position:relative;"><iframe src="https://giphy.com/embed/nnYkNPnxysc5W" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/nnYkNPnxysc5W">via GIPHY</a></p> */
-
-// https://gph.is/1zeXWUA
