@@ -12,7 +12,8 @@
 
   <header>
 
-    <img src="assets/heartBot-Logo.png" class="logo" alt="site-logo">
+    <img src="assets/heartBot-Logo.png" class="logo" id="logo" alt="site-logo">
+    <h2>I'm feeling...</h2>
     <a href="https://twitter.com/heartbotbb" target="blank">
     <div class="header-flex">
         <img src="assets/twitter-red.png" class="twitter-icon">
@@ -24,7 +25,6 @@
 
   <main>
 
-    <h2>I'm feeling...</h2>
     <form id="form">
         <select id="form-dropdown" name="dropdown">
             <option value="hopeful">Hopeful</option>
@@ -36,15 +36,15 @@
          </select><br>
           <button id="cheer-button">Cheer me up :)</button>
     </form>
-    <img class="robot-head" src="assets/robot-head.png">
+    <img class="robot-head hidden" id="robot-head" src="assets/robot-head.png">
     <div id="robot-wrapper">
-      <img class="robot-left-arm" src="assets/left-arm.png">
+      <img class="robot-left-arm hidden" id="robot-left" src="assets/left-arm.png">
       <div id="response">
         <div id="text-box" class="hidden"></div>
       </div>
-      <img class="robot-right-arm" src="assets/right-arm.png">
+      <img class="robot-right-arm hidden" id="robot-right" src="assets/right-arm.png">
     </div>
-    <img class="robot-feet" src="assets/feet.png">
+    <img class="robot-feet hidden" id="robot-feet" src="assets/feet.png">
 
   </main>
 
