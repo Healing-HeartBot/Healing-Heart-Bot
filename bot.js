@@ -28,7 +28,7 @@ stream.on('tweet', function(tweet) {
     tweet: tweet.text
   };
 
-  postTwitReq(userData);
+  // postTwitReq(userData);
 
   const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
   const tweetId = tweet.id_str;
@@ -83,9 +83,9 @@ stream.on('tweet', function(tweet) {
   }
 });
 
-function postTwitReq(newTweet) {
-  return request
-    .post(`${process.env.BASE_URL}/api/twitreq`)
-    .send(newTweet)
-    .then(({ body }) => body);
-}
+// function postTwitReq(newTweet) {
+//   return request
+//     .post(`${process.env.BASE_URL}/api/twitreq`)
+//     .send(newTweet)
+//     .then(({ body }) => body);
+// }
