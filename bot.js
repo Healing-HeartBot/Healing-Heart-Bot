@@ -37,7 +37,7 @@ stream.on('tweet', function(tweet) {
   for(let i = 0; i < ent.hashtags.length; i++) {
     if(ent.hashtags[i].text === 'staystrongbb') routeCondition = true;
   }
-  // console.log(routeCondition);
+  
   if(routeCondition) {
     return request
       .post(`${process.env.BASE_URL}/api/responses`)
@@ -72,6 +72,7 @@ stream.on('tweet', function(tweet) {
 
         const index = pickMood(baseMoods.length);
         const base = baseMessages[baseMoods[0]];
+        console.log('this is the base[index]', base[index]);
         console.log('this should be a tweet sent by user', mongoReq);
         newTweeter.post('statuses/update', { status: `Hi @${user.screen_name}. ${base[index]} ${body[0].content}` }, function(err, data) {
           console.log('bot tweet', data);
