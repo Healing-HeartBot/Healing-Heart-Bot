@@ -690,7 +690,7 @@ const seedData = [
   },
   {
     "id": 65,
-    "content": "https://gph.is/1K3V8ST ",
+    "content": "https://giphy.com/gifs/1quA30SK5INHy/",
     "type": "gif",
     "moods": [
       "mad",
@@ -699,7 +699,7 @@ const seedData = [
   },
   {
     "id": 66,
-    "content": "https://gph.is/g/EGy2kvJ",
+    "content": "https://giphy.com/gifs/eMsCxr6w35vjfI4zl5/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -708,7 +708,7 @@ const seedData = [
   },
   {
     "id": 67,
-    "content": "https://gph.is/2r9feGx",
+    "content": "https://giphy.com/gifs/SckG81BMgjKYQMI8eP/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -717,7 +717,7 @@ const seedData = [
   },
   {
     "id": 68,
-    "content": "https://gph.is/2KokcrP",
+    "content": "https://giphy.com/gifs/nbQlkJBTeCHod5QsGB/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -726,7 +726,7 @@ const seedData = [
   },
   {
     "id": 69,
-    "content": "http://gph.is/2cUluhA",
+    "content": "https://giphy.com/gifs/zs2ZvVok2G8ta/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -735,7 +735,7 @@ const seedData = [
   },
   {
     "id": 70,
-    "content": "https://gph.is/g/ZrL85XE",
+    "content": "https://giphy.com/gifs/jOh4SBwiPnKa8b1GMP/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -746,7 +746,7 @@ const seedData = [
   },
   {
     "id": 71,
-    "content": "http://gph.is/1Y7gFhK",
+    "content": "https://giphy.com/gifs/xT9DPKUeUhFZz1tPzO/",
     "type": "Gif",
     "moods": [
       "weak",
@@ -755,7 +755,7 @@ const seedData = [
   },
   {
     "id": 72,
-    "content": "http://gph.is/XGMqm5",
+    "content": "https://giphy.com/gifs/13XqTVXhuFwIMw/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -764,7 +764,7 @@ const seedData = [
   },
   {
     "id": 73,
-    "content": "http://gph.is/13ZQMUv",
+    "content": "https://giphy.com/gifs/pWHBuDsC3h4Y0/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -775,7 +775,7 @@ const seedData = [
   },
   {
     "id": 74,
-    "content": "http://gph.is/2fzgmyp",
+    "content": "https://giphy.com/gifs/3ov9k5i2JcfRkP0fq8/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -784,7 +784,7 @@ const seedData = [
   },
   {
     "id": 75,
-    "content": "http://gph.is/YCdFKV",
+    "content": "https://giphy.com/gifs/isbkmf3ZIKTtK/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -793,7 +793,7 @@ const seedData = [
   },
   {
     "id": 76,
-    "content": "http://gph.is/XLyOpT",
+    "content": "https://giphy.com/gifs/sIE0hveuiwCNG/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -802,7 +802,7 @@ const seedData = [
   },
   {
     "id": 77,
-    "content": "http://gph.is/2qaUboa",
+    "content": "https://giphy.com/gifs/xUA7aP7Sk0Q2uqEPte/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -811,7 +811,7 @@ const seedData = [
   },
   {
     "id": 78,
-    "content": "https://gph.is/24XC66R",
+    "content": "https://giphy.com/gifs/3oEjHS6TEOK2hkk2wU/",
     "type": "Gif",
     "moods": [
       "bitter",
@@ -822,7 +822,7 @@ const seedData = [
   },
   {
     "id": 79,
-    "content": "https://gph.is/XIJhlQ ",
+    "content": "https://giphy.com/gifs/dWFBbCihEZ4wU/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -831,7 +831,7 @@ const seedData = [
   },
   {
     "id": 80,
-    "content": "https://gph.is/Z1UolG ",
+    "content": "https://giphy.com/gifs/YqoQ9wgKBCNVe/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -840,7 +840,7 @@ const seedData = [
   },
   {
     "id": 81,
-    "content": "https://gph.is/2wyd7jJ",
+    "content": "https://giphy.com/gifs/3owvKieDrn9e8hwXcs/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -851,7 +851,7 @@ const seedData = [
   },
   {
     "id": 82,
-    "content": "https://gph.is/2v8HV7l ",
+    "content": "https://giphy.com/gifs/xTg8B1LhEhgLBIN1zG/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -860,7 +860,7 @@ const seedData = [
   },
   {
     "id": 83,
-    "content": "https://gph.is/2lkKqjI",
+    "content": "https://giphy.com/gifs/1daIjZDdkHPmflXUEj/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -869,7 +869,7 @@ const seedData = [
   },
   {
     "id": 84,
-    "content": "https://gph.is/1LnCqDw",
+    "content": "https://giphy.com/gifs/10tIjpzIu8fe0/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -878,7 +878,7 @@ const seedData = [
   },
   {
     "id": 85,
-    "content": "https://gph.is/1OLudxc",
+    "content": "https://giphy.com/gifs/L95W4wv8nnb9K/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -887,7 +887,7 @@ const seedData = [
   },
   {
     "id": 86,
-    "content": "https://gph.is/2ciGmhR",
+    "content": "https://giphy.com/gifs/26uff7HZXXmNIY1lC/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -896,7 +896,7 @@ const seedData = [
   },
   {
     "id": 87,
-    "content": "https://gph.is/2eLwPB6",
+    "content": "https://giphy.com/gifs/3oriNM8HF8oijarwre/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -905,7 +905,7 @@ const seedData = [
   },
   {
     "id": 88,
-    "content": "https://gph.is/XKMamd",
+    "content": "https://giphy.com/gifs/Om2E6LgIWy8GA/",
     "type": "Gif",
     "moods": [
       "bitter",
@@ -915,7 +915,7 @@ const seedData = [
   },
   {
     "id": 89,
-    "content": "https://gph.is/2IZ4a6Q",
+    "content": "https://giphy.com/gifs/euBfC1taVSnyIiOZ13/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -924,7 +924,7 @@ const seedData = [
   },
   {
     "id": 90,
-    "content": "https://gph.is/1bZv1GA",
+    "content": "https://giphy.com/gifs/YUPFFBm7duo2A/",
     "type": "Gif",
     "moods": [
       "bitter",
@@ -933,7 +933,7 @@ const seedData = [
   },
   {
     "id": 91,
-    "content": "https://gph.is/g/aXb58p4",
+    "content": "https://giphy.com/gifs/YVqnoAhPV1lvCDyIqV/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -942,7 +942,7 @@ const seedData = [
   },
   {
     "id": 92,
-    "content": "https://gph.is/2EFO6bE",
+    "content": "https://giphy.com/gifs/xAFxREW6ipaktgDgLl/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -951,7 +951,7 @@ const seedData = [
   },
   {
     "id": 93,
-    "content": "https://gph.is/1f0GTkj",
+    "content": "https://giphy.com/gifs/xAFxREW6ipaktgDgLl/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -960,7 +960,7 @@ const seedData = [
   },
   {
     "id": 94,
-    "content": "https://gph.is/2jIFthp",
+    "content": "https://giphy.com/gifs/ttt7XyHxEbY5i/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -969,7 +969,7 @@ const seedData = [
   },
   {
     "id": 95,
-    "content": "https://gph.is/2EFjhQw",
+    "content": "https://giphy.com/gifs/1itJnruGIqwg9qGdK9/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -978,7 +978,7 @@ const seedData = [
   },
   {
     "id": 96,
-    "content": "https://gph.is/XNeLY1",
+    "content": "https://giphy.com/gifs/ZebTmyvw85gnm/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -987,7 +987,7 @@ const seedData = [
   },
   {
     "id": 97,
-    "content": "https://gph.is/2Ls1ShD",
+    "content": "https://giphy.com/gifs/7NP07dTr1gZstAan9f/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -996,7 +996,7 @@ const seedData = [
   },
   {
     "id": 98,
-    "content": "https://gph.is/Vx1C2W",
+    "content": "https://giphy.com/gifs/AYKv7lXcZSJig/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1006,7 +1006,7 @@ const seedData = [
   },
   {
     "id": 99,
-    "content": "https://gph.is/18Q0pew",
+    "content": "https://giphy.com/gifs/PsTVjW9dInEvS/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1016,7 +1016,7 @@ const seedData = [
   },
   {
     "id": 100,
-    "content": "https://gph.is/29xDQiJ",
+    "content": "https://giphy.com/gifs/Dqyziru9dtHaw/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1026,7 +1026,7 @@ const seedData = [
   },
   {
     "id": 101,
-    "content": "https://gph.is/g/4L3w3gZ",
+    "content": "https://giphy.com/gifs/ZwRgsX56lU4QHUwwD1/",
     "type": "Gif",
     "moods": [
       "lonely",
@@ -1035,7 +1035,7 @@ const seedData = [
   },
   {
     "id": 102,
-    "content": "https://gph.is/XLAVdg ",
+    "content": "https://giphy.com/gifs/smkHMM0SR2eCk/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1327,7 +1327,7 @@ const seedData = [
   },
   {
     "id": 132,
-    "content": "https://gph.is/2AvOjvk",
+    "content": "https://giphy.com/gifs/3o6fJ46kqfVubBCc0g/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -1336,7 +1336,7 @@ const seedData = [
   },
   {
     "id": 133,
-    "content": "https://gph.is/g/ajxG084",
+    "content": "https://giphy.com/gifs/ZBQhoZC0nqknSviPqT/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1346,7 +1346,7 @@ const seedData = [
   },
   {
     "id": 134,
-    "content": "https://gph.is/28RZ9dt",
+    "content": "https://giphy.com/gifs/3M4NpbLCTxBqU/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1356,7 +1356,7 @@ const seedData = [
   },
   {
     "id": 135,
-    "content": "https://gph.is/1zeXWUA",
+    "content": "https://giphy.com/gifs/nnYkNPnxysc5W/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -1366,7 +1366,7 @@ const seedData = [
   },
   {
     "id": 136,
-    "content": "https://gph.is/2q7N3VX",
+    "content": "https://giphy.com/gifs/l4FGGGqzAGoYytjck/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -1376,7 +1376,7 @@ const seedData = [
   },
   {
     "id": 137,
-    "content": "https://gph.is/2og01T3",
+    "content": "https://giphy.com/gifs/OkjZzv2gYjI4KqTItL/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -1386,7 +1386,7 @@ const seedData = [
   },
   {
     "id": 138,
-    "content": "https://gph.is/2949CTu",
+    "content": "https://giphy.com/gifs/xT0GqKQJVxWzTSrLIQ/",
     "type": "Gif",
     "moods": [
       "hopeful",
@@ -1395,7 +1395,7 @@ const seedData = [
   },
   {
     "id": 139,
-    "content": "https://gph.is/g/apyG3eo",
+    "content": "https://giphy.com/gifs/YrCR5HR5SeVzQvZ56O/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1406,7 +1406,7 @@ const seedData = [
   },
   {
     "id": 140,
-    "content": "https://gph.is/g/E1mzN6w",
+    "content": "https://giphy.com/gifs/jni1tqwVBzsswq0qRS/",
     "type": "Gif",
     "moods": [
       "mad",
@@ -1415,7 +1415,7 @@ const seedData = [
   },
   {
     "id": 141,
-    "content": "https://gph.is/2mlqHRf",
+    "content": "https://giphy.com/gifs/1k3urx6ARCPLEGjRE8/",
     "type": "Gif",
     "moods": [
       "bitter",
@@ -1426,7 +1426,7 @@ const seedData = [
   },
   {
     "id": 142,
-    "content": "https://gph.is/2KMLlUm",
+    "content": "https://giphy.com/gifs/waco2KmTAv6h1lqLfd/",
     "type": "Gif",
     "moods": [
       "sad",
@@ -1437,7 +1437,7 @@ const seedData = [
   },
   {
     "id": 143,
-    "content": "https://gph.is/2uMAh5Z",
+    "content": "https://giphy.com/gifs/xUn3CdFeaGn8BCG448/",
     "type": "Gif",
     "moods": [
       "weak",
@@ -1447,7 +1447,7 @@ const seedData = [
   },
   {
     "id": 144,
-    "content": "https://gph.is/KsiVR5",
+    "content": "https://giphy.com/gifs/rQKrtM98xdP5m/",
     "type": "Gif",
     "moods": [
       "bitter",
@@ -1456,13 +1456,173 @@ const seedData = [
   },
   {
     "id": 145,
-    "content": "https://gph.is/1CNsmih",
+    "content": "https://giphy.com/gifs/13UZ2OuAbzmsTu/",
     "type": "Gif",
     "moods": [
       "sad",
       "weak",
       "hopeful"
     ]
+  },
+  {
+    "id": 146,
+    "content": "https://www.theparisreview.org/blog/2019/07/16/the-crane-wife/",
+    "type": "Article",
+    "moods": [
+      "hopeful",
+      "sad"
+    ]
+  },
+  {
+    "id": 147,
+    "content": "https://cupofjo.com/?p=198602 ",
+    "type": "Article",
+    "moods": [
+      "hopeful",
+      "sad"
+    ]
+  },
+  {
+    "id": 148,
+    "content": "https://cupofjo.com/?p=188876",
+    "type": "Article",
+    "moods": [
+      "hopeful",
+      "sad",
+      "weak",
+      "lonely",
+      "bitter",
+      "mad"
+    ]
+  },
+  {
+    "id": 149,
+    "content": "Have a read: http://cupjo.co/1GhKnZb",
+    "type": "Article",
+    "moods": [
+      "hopeful",
+      "sad",
+      "weak",
+      "lonely"
+    ]
+  },
+  {
+    "id": 150,
+    "content": "https://nyti.ms/2MFnQyK",
+    "type": "Article",
+    "moods": [
+      "hopeful",
+      "sad",
+      "weak",
+      "lonely"
+    ]
+  },
+  {
+    "id": 151,
+    "content": "https://nyti.ms/2WELNdT",
+    "type": "Article",
+    "moods": [
+      "hopeful",
+      "sad",
+      "weak",
+      "lonely"
+    ]
+  },
+  {
+    "id": 152,
+    "content": "https://youtu.be/BiQIc7fG9pA",
+    "type": "Video",
+    "moods": [
+      "weak",
+      "sad"
+    ]
+  },
+  {
+    "id": 153,
+    "content": "https://youtu.be/d8ekz_CSBVg",
+    "type": "Video",
+    "moods": [
+      "mad",
+      "bitter"
+    ]
+  },
+  {
+    "id": 154,
+    "content": "https://youtu.be/QUwxKWT6m7U",
+    "type": "Video",
+    "moods": [
+      "sad",
+      "weak",
+      "lonely"
+    ]
+  },
+  {
+    "id": 155,
+    "content": "https://youtu.be/7qH4qyi1-Ys",
+    "type": "Video",
+    "moods": [
+      "sad",
+      "weak",
+      "lonely"
+    ]
+  },
+  {
+    "id": 156,
+    "content": "https://youtu.be/uxUATkpMQ8A",
+    "type": "Video",
+    "moods": [
+      "mad",
+      "bitter"
+    ]
+  },
+  {
+    "id": 157,
+    "content": "https://youtu.be/0WxDrVUrSvI",
+    "type": "Video",
+    "moods": [
+      "mad",
+      "bitter"
+    ]
+  },
+  {
+    "id": 158,
+    "content": "https://youtu.be/k0GQSJrpVhM",
+    "type": "Video",
+    "moods": [
+      "sad",
+      "hopeful",
+      "weak",
+      "lonely"
+    ]
+  },
+  {
+    "id": 159,
+    "content": "https://youtu.be/W6BYAjhjt38",
+    "type": "Video",
+    "moods": [
+      "sad",
+      "hopeful",
+      "weak",
+      "lonely"
+    ]
+  },
+  {
+    "id": 160,
+    "content": "https://weheartit.com/entry/334911029",
+    "type": "Image",
+    "moods": "hopeful, sad, lonely"
+  },
+  {
+    "id": 161,
+    "content": "https://giphy.com/gifs/l0MYCDXGiwtgif24o/",
+    "type": "Gif",
+    "moods": "hopeful, sad, lonely, weak"
+  },
+  {
+    "id": 162,
+    "content": "https://giphy.com/gifs/iCOKJo5sy0D6g/",
+    "type": "Gif",
+    "moods": "sad, lonely, weak"
   }
 ]
 
