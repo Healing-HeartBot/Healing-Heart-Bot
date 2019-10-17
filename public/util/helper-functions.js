@@ -5,7 +5,7 @@ export function getResponse(mood) {
 }
 
 export function getGiphy(id) {
-  const url = `https://api.giphy.com/v1/gifs/${id}?api_key=99S9Gx3qn8JOOzyDfocCFu6Mk9Y9bniZ`;
+  const url = `https://api.giphy.com/v1/gifs/${id}?api_key=${process.env.GIPHY_API_KEY}`;
   return fetch(url)
     .then(gif => gif.json());
 }
