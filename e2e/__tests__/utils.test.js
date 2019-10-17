@@ -8,12 +8,9 @@ describe('checking to see if pick mood works', () => {
 
   it('picks a mood', () => {
     const emotionArray = messages.sad;
-
     const index = pickMood(emotionArray.length);
     console.log(emotionArray[index]);
     expect(emotionArray[index]).toEqual(expect.any(String));
     expect(index).toBeLessThan(6);
-
   });
-
 });
