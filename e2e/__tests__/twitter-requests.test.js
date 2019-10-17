@@ -2,7 +2,6 @@ const request = require('../request');
 const db = require('../db');
 
 describe('Testing Twitter Request Routes', () => {
-
   beforeEach(() => db.dropCollection('twitterreqs'));
 
   const newTwit = {
@@ -10,7 +9,16 @@ describe('Testing Twitter Request Routes', () => {
     location: 'Portland, OR',
     followers: 56,
     hashtags: [{ text: 'mad' }],
-    time: 'March 3, 2019 04:06:06',
+    time: new Date(),
+    tweet: 'whats up heartbot'
+  };
+
+  const newTwit2 = {
+    twitId: '146fg28fg',
+    location: 'Portland, OR',
+    followers: 56,
+    hashtags: [{ text: 'mad' }],
+    time: new Date(),
     tweet: 'whats up heartbot'
   };
 
@@ -25,19 +33,21 @@ describe('Testing Twitter Request Routes', () => {
   it('posts a new tweet', () => {
     return postTwitReq(newTwit).then(newTwit => {
       expect(newTwit).toMatchInlineSnapshot(
-        { _id: expect.any(String) },
+        {
+          _id: expect.any(String),
+          time: expect.any(String)
+        },
         `
         Object {
           "__v": 0,
           "_id": Any<String>,
-          "followers": 56,
           "hashtags": Array [
             Object {
               "text": "mad",
             },
           ],
           "location": "Portland, OR",
-          "time": "March 3, 2019 04:06:06",
+          "time": Any<String>,
           "tweet": "whats up heartbot",
           "twitId": "146fg28f",
         }
@@ -47,17 +57,15 @@ describe('Testing Twitter Request Routes', () => {
   });
 
   it('gets all tweet info', () => {
-    return Promise.all([
-      postTwitReq(newTwit),
-      postTwitReq(newTwit)
-    ])
-      .then(() => {
+    return Promise.all([postTwitReq(newTwit), postTwitReq(newTwit2)]).then(
+      () => {
         return request
           .get('/api/twitreq')
           .expect(200)
           .then(({ body }) => {
             expect(body.length).toBe(2);
           });
-      });
+      }
+    );
   });
 });
