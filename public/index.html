@@ -4,21 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/main.css">
-  <title>Heartbot</title>
+  <title>HeartbotBB</title>
 </head>
 <body>
+
   <header>
-    <img src="http://placehold.it/150x150" alt="placeholder-image">
-    <h1>HeartbotBB</h1>
-    <!-- <img src=""> twitter icon -->
+
+    <img src="assets/heartBot-Logo.png" class="logo" id="logo" alt="site-logo">
+    <h2>I'm feeling...</h2>
+    <a href="https://twitter.com/heartbotbb" target="blank">
+    <div class="header-flex">
+        <img src="assets/twitter-red.png" class="twitter-icon">
+        <p>@heartbotBB</p>
+      </div>
+    </a>
+
   </header>
 
   <main>
 
-      <!-- <iframe src="https://open.spotify.com/embed/track/6CcJMwBtXByIz4zQLzFkKc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-
-    <h2>I'm feeling...</h2>
     <form id="form">
         <select id="form-dropdown" name="dropdown">
             <option value="hopeful">Hopeful</option>
@@ -27,14 +33,18 @@
             <option value="mad">Mad</option>
             <option value="weak">Weak</option>
             <option value="bitter">Bitter</option>
-         </select>
-      
+         </select><br>
           <button id="cheer-button">Cheer me up :)</button>
     </form>
-
-    <div id="response">
-      <div id="giphy-box"></div>
+    <img class="robot-head hidden" id="robot-head" src="assets/robot-head.png">
+    <div id="robot-wrapper">
+      <img class="robot-left-arm hidden" id="robot-left" src="assets/left-arm.png">
+      <div id="response">
+        <div id="text-box" class="hidden"></div>
+      </div>
+      <img class="robot-right-arm hidden" id="robot-right" src="assets/right-arm.png">
     </div>
+    <img class="robot-feet hidden" id="robot-feet" src="assets/feet.png">
 
   </main>
 
