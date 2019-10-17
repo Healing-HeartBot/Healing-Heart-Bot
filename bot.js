@@ -21,12 +21,15 @@ stream.on('disconnected', () => console.log('It is disconnected!'));
 process.on('SIGTERM', () => {
   stream.stop();
   console.log('stopping stream');
+  process.exit(0);
 });
 
 process.on('SIGINT', () => {
   stream.stop();
   console.log('stopping stream');
+  process.exit(0);
 });
+
 
 stream.on('tweet', function(tweet) {
   const user = tweet.user;
