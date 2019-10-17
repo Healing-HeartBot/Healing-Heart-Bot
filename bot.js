@@ -28,11 +28,6 @@ process.on('SIGINT', () => {
   console.log('stopping stream');
 });
 
-process.on('SIGKILL', () => {
-  stream.stop();
-  console.log('stopping stream');
-});
-
 stream.on('tweet', function(tweet) {
   const user = tweet.user;
   const ent = tweet.entities;
