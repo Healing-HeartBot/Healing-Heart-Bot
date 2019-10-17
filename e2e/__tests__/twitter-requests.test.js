@@ -60,5 +60,4 @@ describe('Testing Twitter Request Routes', () => {
           });
       });
   });
-
 });
