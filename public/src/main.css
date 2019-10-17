@@ -23,7 +23,6 @@ h2 {
 }
 
 form {
-  /* display: inline-block; */
   text-align: center;
   margin-bottom: 50px;
 }
@@ -84,7 +83,6 @@ a {
   margin-right: -10px;
   height: 8%;
   width: 8%;
-  /* z-index: 1; */
 }
 
 .robot-right-arm {

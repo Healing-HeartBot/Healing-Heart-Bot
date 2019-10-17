@@ -1,6 +1,6 @@
 require('dotenv').config();
 const TwitterReq = require('./lib/models/twitter-request');
-const baseMessages = require('./lib/middleware/utils/generic-messages');
+const genericMessages = require('./lib/middleware/utils/generic-messages');
 const { moodMapper, moods } = require('./lib/middleware/utils/mood-dictionary');
 const request = require('superagent');
 const Twit = require('twit');
@@ -15,8 +15,8 @@ const newTweeter = new Twit({
 
 const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', language: 'en' });
 stream.on('error', console.error);
-stream.on('connected', () => console.log('we connect'));
-stream.on('disconnected', () => console.log('im disconnected'));
+stream.on('connected', () => console.log('We are connected!'));
+stream.on('disconnected', () => console.log('It is disconnected!'));
 
 process.on('SIGTERM', () => {
   stream.stop();
@@ -35,19 +35,20 @@ stream.on('tweet', function(tweet) {
     tweet: tweet.text
   };
 
-  if(user.id === 1182728176755064800) {
+  if(user.id === process.env.TWITTER_BOT_ID) {
     stream.stop();
   }
 
   postTwitReq(userData);
 
-  const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
-  const tweetId = tweet.id_str;
   let routeCondition = false;
-
+  
   for(let i = 0; i < ent.hashtags.length; i++) {
     if(ent.hashtags[i].text === 'staystrongbb') routeCondition = true;
   }
+  
+  const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
+  const tweetId = tweet.id_str;
   
   if(routeCondition) {
     return request
@@ -63,7 +64,6 @@ stream.on('tweet', function(tweet) {
     let tweetMood = ent.hashtags.map(mood => {
       return `moods=${mood.text}`;
     });
-
     let mappedMood = ent.hashtags.map(mood => {
       return mood.text;
     });
@@ -82,10 +82,10 @@ stream.on('tweet', function(tweet) {
           return pickedMood;
         };
 
-        const base = baseMessages[baseMoods[0]];
-        const index = pickMood(base.length);
+        const moodMessageArray = genericMessages[baseMoods[0]];
+        const index = pickMood(moodMessageArray.length);
         console.log('this should be a tweet sent by user', mongoReq);
-        newTweeter.post('statuses/update', { status: `Hi @${user.screen_name}. ${base[index]} ${body[0].content}` }, function(err, data) {
+        newTweeter.post('statuses/update', { status: `Hi @${user.screen_name}. ${moodMessageArray[index]} ${body[0].content}` }, function(err, data) {
           console.log('bot tweet', data);
         });
       })

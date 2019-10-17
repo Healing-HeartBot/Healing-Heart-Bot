@@ -14,11 +14,9 @@ function postResponse(response) {
 
 Promise.all(
   seedData.map(seed => {
-    return postResponse(seed)
-      .then(thing => {
-        console.log(thing);
-      });
+    return postResponse(seed);
   })
-).then(() => {
-  console.log('done');
-});
+)
+  .then(() => {
+    console.log('Database seeded');
+  });

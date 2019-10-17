@@ -9,10 +9,3 @@ export function getGiphy(id) {
   return fetch(url)
     .then(gif => gif.json());
 }
-
-
-export function getArticle(articleUrl) {
-  const url = `http://iframe.ly/api/oembed?url=${articleUrl}&api_key=126749e00db333290300b0&_omit_css=true`;
-  return fetch(url)
-    .then(article => article.json());
-}
