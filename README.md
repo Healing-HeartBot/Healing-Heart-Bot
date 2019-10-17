@@ -1,7 +1,8 @@
 # Healing Heart Bot
 
 [Twitter](http://www.twitter.com/heartbotbb)
-[Front End](https://radiant-dawn-69636.herokuapp.com/)
+[Back End](https://radiant-dawn2.herokuapp.com/)
+[Front End](https://heartbotbb.herokuapp.com/)
 
 Healing Heart Bot is a Twitter bot designed to help you get through a breakup by sharing supportive messages when you tweet at it. Depending on the mood you share via a Twitter hashtag, the bot will tweet back at you with a message, GIF, or song specifically tagged to match that mood. You can also share your own advice with the bot that it will in turn tweet out to others. 
 
@@ -29,6 +30,8 @@ You can also access the response bot on the front end by going to (FRONT END URL
 ## Data Aggregation
 We have routes set up to see data from the bot’s usage, including:
 * Most commonly used hashtags
+* User's hashtags and messages over time
+* Moods by time of day
 
 ## How It’s Built
 Healing Heart Bot is built using Node.js, MongoDB, and Express for our database and API. We seeded the database with 145 initial responses that are each tagged with at least one of our six base moods (mad, sad, lonely, weak, bitter, hopeful). 
