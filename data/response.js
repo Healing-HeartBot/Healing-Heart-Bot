@@ -59,7 +59,7 @@ const seedData = [
   },
   {
     "id": 6,
-    "content": "heartBots love for you is in overdrive.",
+    "content": "heartBot's love for you is in overdrive.",
     "type": "Message",
     "moods": [
       "sad",
@@ -121,7 +121,7 @@ const seedData = [
   },
   {
     "id": 11,
-    "content": "Stars cannot shine without darkness.",
+    "content": "Stars can't shine without darkness.",
     "type": "Message",
     "moods": [
       "lonely",
@@ -131,7 +131,7 @@ const seedData = [
   },
   {
     "id": 12,
-    "content": "Don't stress the could haves. If it should have, it would have.",
+    "content": "Don't stress the could haves. If it should have been, it would have.",
     "type": "Message",
     "moods": [
       "hopeful",
@@ -371,7 +371,7 @@ const seedData = [
   },
   {
     "id": 34,
-    "content": "If you really love something set it free, if it comes back it's yours, if not it wasn't meant to be. ",
+    "content": "If you really love something set it free. If it comes back it's yours, if not it wasn't meant to be. ",
     "type": "Message",
     "moods": [
       "sad",
@@ -407,7 +407,7 @@ const seedData = [
   },
   {
     "id": 37,
-    "content": "Holding onto anger is like uploading malware and expecting the other persons heartDrive to fail.",
+    "content": "Holding onto anger is like uploading malware and expecting the other person's heartDrive to fail.",
     "type": "Message",
     "moods": [
       "mad",
@@ -416,7 +416,7 @@ const seedData = [
   },
   {
     "id": 38,
-    "content": "If you can love the wrong peron that much, imagine how much you can love the right one.",
+    "content": "If you can love the wrong person that much, imagine how much you can love the right one.",
     "type": "Message",
     "moods": [
       "sad",
@@ -1045,7 +1045,7 @@ const seedData = [
   },
   {
     "id": 103,
-    "content": "Tapan Ghosh said, \"Heartbroken? Channel your sorrow to become worthy of love. The world will be yours\"",
+    "content": "Tapan Ghosh said, \"Heartbroken? Channel your sorrow to become worthy of love. The world will be yours.\"",
     "type": "Message",
     "moods": [
       "hopeful",
@@ -1074,7 +1074,7 @@ const seedData = [
   },
   {
     "id": 106,
-    "content": "Someone said tis better to have loved and lost than never to have loved at all.",
+    "content": "Someone said 'tis better to have loved and lost than never to have loved at all.",
     "type": "Message",
     "moods": [
       "sad",
@@ -1496,17 +1496,6 @@ const seedData = [
     ]
   },
   {
-    "id": 149,
-    "content": "Have a read: http://cupjo.co/1GhKnZb",
-    "type": "Article",
-    "moods": [
-      "hopeful",
-      "sad",
-      "weak",
-      "lonely"
-    ]
-  },
-  {
     "id": 150,
     "content": "https://nyti.ms/2MFnQyK",
     "type": "Article",
@@ -1610,20 +1599,31 @@ const seedData = [
     "id": 160,
     "content": "https://weheartit.com/entry/334911029",
     "type": "Image",
-    "moods": "hopeful, sad, lonely"
+    "moods": [
+      "hopeful",
+      "sad",
+      "lonely"
+    ]
   },
   {
     "id": 161,
     "content": "https://giphy.com/gifs/l0MYCDXGiwtgif24o/",
     "type": "Gif",
-    "moods": "hopeful, sad, lonely, weak"
+    "moods": [
+      "hopeful",
+      "sad",
+      "lonely",
+      "weak"
+    ]
   },
   {
     "id": 162,
     "content": "https://giphy.com/gifs/iCOKJo5sy0D6g/",
     "type": "Gif",
-    "moods": "sad, lonely, weak"
+    "moods": [
+      "sad",
+      "lonely",
+      "weak"
+    ]
   }
-]
-
-module.exports = seedData;
+];
