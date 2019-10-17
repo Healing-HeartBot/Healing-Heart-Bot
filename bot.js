@@ -53,8 +53,7 @@ stream.on('tweet', function(tweet) {
     return request
       .post(`${process.env.BASE_URL}/api/responses`)
       .send({ content: parseTweet })
-      .then(thing => {
-        console.log(thing);
+      .then(() => {
         newTweeter.post('favorites/create', { id: tweetId }, function(err, data) {
           console.log('liked tweet', data);
         });
@@ -64,9 +63,11 @@ stream.on('tweet', function(tweet) {
     let tweetMood = ent.hashtags.map(mood => {
       return `moods=${mood.text}`;
     });
+
     let mappedMood = ent.hashtags.map(mood => {
       return mood.text;
     });
+
     if(tweetMood.length > 1) {
       tweetMood = tweetMood.join('&');
     }
