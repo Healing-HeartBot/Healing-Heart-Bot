@@ -24,8 +24,8 @@ form.addEventListener('submit', event => {
   getResponse(mood)
     .then(receivedResponse => {
       const botResponse = receivedResponse[0].content;
-      console.log(botResponse);
       if (botResponse.includes('giphy')) {
+        console.log(botResponse);
         const giphyId = botResponse.slice(23, botResponse.length - 1);
         getGiphy(giphyId)
           .then(gifData => {
@@ -45,8 +45,17 @@ form.addEventListener('submit', event => {
         spotifyPlayer.frameBorder = 0;
         spotifyPlayer.allowtransparency = 'true';
         spotifyPlayer.allow = 'encrypted-media';
-        console.log(spotifyPlayer);
         response.append(spotifyPlayer);
+      }
+      else if (botResponse.includes('youtu.')) {
+        const youtubePlayer = document.createElement('iframe');
+        youtubePlayer.src = 'https://www.youtube.com/embed/' + botResponse.slice(17);
+        youtubePlayer.width = 560;
+        youtubePlayer.height = 315;
+        youtubePlayer.frameBorder = 0;
+        youtubePlayer.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+        youtubePlayer.allowFullscreen = true;
+        response.append(youtubePlayer);
       }
       else {
         const textBox = document.createElement('div')
