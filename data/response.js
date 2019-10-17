@@ -1496,28 +1496,6 @@ const seedData = [
     ]
   },
   {
-    "id": 150,
-    "content": "https://nyti.ms/2MFnQyK",
-    "type": "Article",
-    "moods": [
-      "hopeful",
-      "sad",
-      "weak",
-      "lonely"
-    ]
-  },
-  {
-    "id": 151,
-    "content": "https://nyti.ms/2WELNdT",
-    "type": "Article",
-    "moods": [
-      "hopeful",
-      "sad",
-      "weak",
-      "lonely"
-    ]
-  },
-  {
     "id": 152,
     "content": "https://youtu.be/BiQIc7fG9pA",
     "type": "Video",
