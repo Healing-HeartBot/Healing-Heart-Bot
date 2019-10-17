@@ -28,13 +28,30 @@ form {
   margin-bottom: 50px;
 }
 
+select {
+  background-color:#db3850;
+  width: 200px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: Open Sans;
+  font-size: 24px;
+  border: 1.5px white double;
+}
+
 button {
-  padding: 15px 15px;
   color: white;
   background-color:#db3850;
   margin-top: 20px;
   text-transform: uppercase;
+  width: 200px;
+  height: 40px;
   border-radius: 5px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1.5px white double;
 }
 
 .header-flex {
@@ -104,7 +121,6 @@ a {
 @keyframes logo {
  0% { transform: translate(78vh, 45vh) scale(3.5) }
  100% { transform: translateY(0); }
- 
 }
 
 .hidden {
@@ -124,7 +140,4 @@ a {
   font-family: 'Amatic SC', cursive;
   background-color: #eee;
   font-size: 35px;
-  /* border: 1px solid #eee; */
-  /* z-index: -1; */
-  /* margin-top: 20px; */
 }
