@@ -121,7 +121,6 @@ a {
 @keyframes logo {
  0% { transform: translate(78vh, 45vh) scale(3.5) }
  100% { transform: translateY(0); }
- 
 }
 
 .hidden {
@@ -141,7 +140,4 @@ a {
   font-family: 'Amatic SC', cursive;
   background-color: #eee;
   font-size: 35px;
-  /* border: 1px solid #eee; */
-  /* z-index: -1; */
-  /* margin-top: 20px; */
 }
