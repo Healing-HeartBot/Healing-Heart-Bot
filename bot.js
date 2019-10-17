@@ -13,97 +13,104 @@ const newTweeter = new Twit({
   strictSSL: true,
 });
 
-const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', language: 'en' });
-stream.on('error', console.error);
-stream.on('connected', () => console.log('We are connected!'));
-stream.on('disconnected', () => console.log('It is disconnected!'));
+newTweeter
+  .get('account/verify_credentials', {
+    include_entities: false,
+    skip_status: true,
+    include_email: false
+  }, () => {
 
-process.on('SIGTERM', () => {
-  stream.stop();
-  console.log('stopping stream');
-  process.exit(0);
-});
+    const stream = newTweeter.stream('statuses/filter', { track: '@heartbotbb', language: 'en' });
+    stream.on('error', console.error);
+    stream.on('connected', () => console.log('We are connected!'));
+    stream.on('disconnected', () => console.log('It is disconnected!'));
 
-process.on('SIGINT', () => {
-  stream.stop();
-  console.log('stopping stream');
-  process.exit(0);
-});
-
-
-stream.on('tweet', function(tweet) {
-  const user = tweet.user;
-  const ent = tweet.entities;
-
-  const userData = {
-    twitId: user.id,
-    location: user.location,
-    followers: user.followers,
-    hashtags: ent.hashtags,
-    time: tweet.created_at,
-    tweet: tweet.text
-  };
-
-  if(user.id === process.env.TWITTER_BOT_ID) {
-    stream.stop();
-  }
-
-  postTwitReq(userData);
-
-  let routeCondition = false;
-  
-  for(let i = 0; i < ent.hashtags.length; i++) {
-    if(ent.hashtags[i].text === 'staystrongbb') routeCondition = true;
-  }
-  
-  const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
-  const tweetId = tweet.id_str;
-  
-  if(routeCondition) {
-    return request
-      .post(`${process.env.BASE_URL}/api/responses`)
-      .send({ content: parseTweet })
-      .then(() => {
-        newTweeter.post('favorites/create', { id: tweetId }, function(err, data) {
-          console.log('liked tweet', data);
-        });
-      });
-  }
-  else {
-    let tweetMood = ent.hashtags.map(mood => {
-      return `moods=${mood.text}`;
-    });
-    let mappedMood = ent.hashtags.map(mood => {
-      return mood.text;
+    process.on('SIGTERM', () => {
+      stream.stop();
+      console.log('stopping stream');
+      process.exit(0);
     });
 
-    if(tweetMood.length > 1) {
-      tweetMood = tweetMood.join('&');
-    }
-    return request
-      .get(`${process.env.BASE_URL}/api/responses/heartbot?${tweetMood}`)
-      .then(({ body }) => {
-        const mongoReq = new TwitterReq(userData);
-        const baseMoods = moodMapper(moods, mappedMood);
+    process.on('SIGINT', () => {
+      stream.stop();
+      console.log('stopping stream');
+      process.exit(0);
+    });
 
-        const pickMood = function(num) {
-          const pickedMood = Math.floor(Math.random() * num);
-          return pickedMood;
-        };
+    stream.on('tweet', function(tweet) {
+      const user = tweet.user;
+      const ent = tweet.entities;
 
-        const moodMessageArray = genericMessages[baseMoods[0]];
-        const index = pickMood(moodMessageArray.length);
-        console.log('this should be a tweet sent by user', mongoReq);
-        newTweeter.post('statuses/update', { status: `Hi @${user.screen_name}. ${moodMessageArray[index]} ${body[0].content}` }, function(err, data) {
-          console.log('bot tweet', data);
+      const userData = {
+        twitId: user.id,
+        location: user.location,
+        followers: user.followers,
+        hashtags: ent.hashtags,
+        time: tweet.created_at,
+        tweet: tweet.text
+      };
+
+      if(user.id === process.env.TWITTER_BOT_ID) {
+        stream.stop();
+      }
+
+      postTwitReq(userData);
+
+      let routeCondition = false;
+
+      for(let i = 0; i < ent.hashtags.length; i++) {
+        if(ent.hashtags[i].text === 'staystrongbb') routeCondition = true;
+      }
+
+      const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
+      const tweetId = tweet.id_str;
+
+      if(routeCondition) {
+        return request
+          .post(`${process.env.BASE_URL}/api/responses`)
+          .send({ content: parseTweet })
+          .then(() => {
+            newTweeter.post('favorites/create', { id: tweetId }, function(err, data) {
+              console.log('liked tweet', data);
+            });
+          });
+      }
+      else {
+        let tweetMood = ent.hashtags.map(mood => {
+          return `moods=${mood.text}`;
         });
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  }
-});
+        let mappedMood = ent.hashtags.map(mood => {
+          return mood.text;
+        });
 
+        if(tweetMood.length > 1) {
+          tweetMood = tweetMood.join('&');
+        }
+        return request
+          .get(`${process.env.BASE_URL}/api/responses/heartbot?${tweetMood}`)
+          .then(({ body }) => {
+            const mongoReq = new TwitterReq(userData);
+            const baseMoods = moodMapper(moods, mappedMood);
+
+            const pickMood = function(num) {
+              const pickedMood = Math.floor(Math.random() * num);
+              return pickedMood;
+            };
+
+            const moodMessageArray = genericMessages[baseMoods[0]];
+            const index = pickMood(moodMessageArray.length);
+            console.log('this should be a tweet sent by user', mongoReq);
+            newTweeter.post('statuses/update', { status: `Hi @${user.screen_name}. ${moodMessageArray[index]} ${body[0].content}` }, function(err, data) {
+              console.log('bot tweet', data);
+            });
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
+    });
+  });
+  
 function postTwitReq(newTweet) {
   return request
     .post(`${process.env.BASE_URL}/api/twitreq`)
