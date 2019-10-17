@@ -35,7 +35,7 @@ stream.on('tweet', function(tweet) {
     tweet: tweet.text
   };
 
-  if(user.id === '1182728176755064800') {
+  if(user.id === 1182728176755064800) {
     stream.stop();
   }
 
