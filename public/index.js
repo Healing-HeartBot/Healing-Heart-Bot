@@ -1,4 +1,4 @@
-import { getResponse, getGiphy } from './util/helper-functions.js';
+import { getResponse, getGiphy, getArticle } from './util/helper-functions.js';
 const form = document.getElementById('form')
 const response = document.getElementById('response');
 const logo = document.getElementById('logo')
@@ -24,8 +24,16 @@ form.addEventListener('submit', event => {
   getResponse(mood)
     .then(receivedResponse => {
       const botResponse = receivedResponse[0].content;
-      if (botResponse.includes('giphy')) {
-        console.log(botResponse);
+      const botArticle = receivedResponse[0].type;
+      if (botArticle.includes('Article')) {
+        const article = document.createElement('iframe');
+        article.src = botResponse;
+        article.width = '800vw';
+        article.height = '600vh';
+        response.append(article);
+      }
+
+      else if (botResponse.includes('giphy')) {
         const giphyId = botResponse.slice(23, botResponse.length - 1);
         getGiphy(giphyId)
           .then(gifData => {
