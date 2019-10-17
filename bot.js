@@ -35,6 +35,10 @@ stream.on('tweet', function(tweet) {
     tweet: tweet.text
   };
 
+  if(user.id === '1182728176755064800') {
+    stream.stop();
+  }
+
   postTwitReq(userData);
 
   const parseTweet = tweet.text.replace(/([@#][\w_-]+)\s/gi, '');
