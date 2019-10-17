@@ -1,4 +1,4 @@
-import { getResponse, getGiphy, getArticle } from './util/helper-functions.js';
+import { getResponse, getGiphy } from './util/helper-functions.js';
 const form = document.getElementById('form')
 const response = document.getElementById('response');
 const logo = document.getElementById('logo')
