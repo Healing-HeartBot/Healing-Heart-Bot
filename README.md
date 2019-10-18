@@ -43,9 +43,4 @@ The same mood is then used to find a generic message to send before the actual r
 We used the Twit NPM package to set up a Twitter bot. The entire project is deployed to Heroku. On the front end, it’s pinging the Giphy API to embed the GIFs onto the page. 
 
 ## Our Team
-This app was made at Alchemy Code Lab by:
-Abbey Masters
-Alex Spencer
-Allison Busse
-Maeve Griffin
-Pat Haynes
+This app was made at Alchemy Code Lab by: Abbey Masters, Alex Spencer, Allison Busse, Maeve Griffin, Pat Haynes
