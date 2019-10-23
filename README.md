@@ -11,7 +11,7 @@ The Twitter bot is set up to listen for any tweets that @ mentions its name (Hea
 
 If you mention the bot along with the hashtag #staystrongbb, it will take the content of your tweet and add it to the response database as a message that other users can then receive. 
 
-You can also access the response bot on the front end by going to (FRONT END URL) and selecting a mood from the dropdown to get a response displayed on the page. 
+You can also access the response bot on the front end by going to http://heartbotbb.herokuapp.com/ and selecting a mood from the dropdown to get a response displayed on the page. 
 
 ## Seeding Response to Local Database
 * First make sure your database is empty before seeding in the data. Use a tool like MongoDB Compass to dump any collections currently in the database. 
