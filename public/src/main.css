@@ -1,0 +1,141 @@
+body {
+  background-color: #EFD5E7;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+select {
+  background-color:#db3850;
+  width: 200px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: Open Sans;
+  font-size: 24px;
+  border: 1.5px white double;
+}
+
+button {
+  color: white;
+  background-color:#db3850;
+  margin-top: 20px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1.5px white double;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}
+
+#robot-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.robot-head {
+  height: 12%;
+  width: 12%;
+  display: block;
+  margin: 0 auto;
+}
+
+.robot-left-arm {
+  margin-right: -10px;
+  height: 8%;
+  width: 8%;
+}
+
+.robot-right-arm {
+  margin-left: -10px;
+  height: 8%;
+  width: 8%;
+}
+
+.robot-feet {
+  height: 18%;
+  width: 18%;
+  display: block;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.twitter-icon {
+  height: 50px;
+  width: auto;
+  padding: 10px 10px;
+}
+
+.logo {
+  height: 115px; 
+  width: auto;
+  padding: 15px 15px;
+} 
+
+.animate {
+  animation-name: logo;
+  animation-duration: 2.5s;
+}
+
+@keyframes logo {
+ 0% { transform: translate(78vh, 45vh) scale(3.5) }
+ 100% { transform: translateY(0); }
+}
+
+.hidden {
+  display: none;
+}
+
+.text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  height: 275px;
+  font-size: 20px;
+  padding: 20px 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Amatic SC', cursive;
+  background-color: #eee;
+  font-size: 35px;
+}
